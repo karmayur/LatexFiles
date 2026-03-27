@@ -1,0 +1,1041 @@
+%% BioMed_Central_Bib_Style_v1.01
+
+\begin{thebibliography}{65}
+% BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
+\ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
+\ifx \binits  \undefined \def \binits#1{#1}\fi
+\ifx \bauthor  \undefined \def \bauthor#1{#1}\fi
+\ifx \batitle  \undefined \def \batitle#1{#1}\fi
+\ifx \bjtitle  \undefined \def \bjtitle#1{#1}\fi
+\ifx \bvolume  \undefined \def \bvolume#1{\textbf{#1}}\fi
+\ifx \byear  \undefined \def \byear#1{#1}\fi
+\ifx \bissue  \undefined \def \bissue#1{#1}\fi
+\ifx \bfpage  \undefined \def \bfpage#1{#1}\fi
+\ifx \blpage  \undefined \def \blpage #1{#1}\fi
+\ifx \burl  \undefined \def \burl#1{\textsf{#1}}\fi
+\ifx \doiurl  \undefined \def \doiurl#1{\url{https://doi.org/#1}}\fi
+\ifx \betal  \undefined \def \betal{\textit{et al.}}\fi
+\ifx \binstitute  \undefined \def \binstitute#1{#1}\fi
+\ifx \binstitutionaled  \undefined \def \binstitutionaled#1{#1}\fi
+\ifx \bctitle  \undefined \def \bctitle#1{#1}\fi
+\ifx \beditor  \undefined \def \beditor#1{#1}\fi
+\ifx \bpublisher  \undefined \def \bpublisher#1{#1}\fi
+\ifx \bbtitle  \undefined \def \bbtitle#1{#1}\fi
+\ifx \bedition  \undefined \def \bedition#1{#1}\fi
+\ifx \bseriesno  \undefined \def \bseriesno#1{#1}\fi
+\ifx \blocation  \undefined \def \blocation#1{#1}\fi
+\ifx \bsertitle  \undefined \def \bsertitle#1{#1}\fi
+\ifx \bsnm \undefined \def \bsnm#1{#1}\fi
+\ifx \bsuffix \undefined \def \bsuffix#1{#1}\fi
+\ifx \bparticle \undefined \def \bparticle#1{#1}\fi
+\ifx \barticle \undefined \def \barticle#1{#1}\fi
+\bibcommenthead
+\ifx \bconfdate \undefined \def \bconfdate #1{#1}\fi
+\ifx \botherref \undefined \def \botherref #1{#1}\fi
+\ifx \url \undefined \def \url#1{\textsf{#1}}\fi
+\ifx \bchapter \undefined \def \bchapter#1{#1}\fi
+\ifx \bbook \undefined \def \bbook#1{#1}\fi
+\ifx \bcomment \undefined \def \bcomment#1{#1}\fi
+\ifx \oauthor \undefined \def \oauthor#1{#1}\fi
+\ifx \citeauthoryear \undefined \def \citeauthoryear#1{#1}\fi
+\ifx \endbibitem  \undefined \def \endbibitem {}\fi
+\ifx \bconflocation  \undefined \def \bconflocation#1{#1}\fi
+\ifx \arxivurl  \undefined \def \arxivurl#1{\textsf{#1}}\fi
+\csname PreBibitemsHook\endcsname
+
+%%% 1
+\bibitem[\protect\citeauthoryear{Capodieci}{2006}]{capodieci2006optical}
+\begin{bchapter}
+\bauthor{\bsnm{Capodieci}, \binits{L.}}:
+\bctitle{From optical proximity correction to lithography-driven physical design (1996-2006): 10 years of resolution enhancement technology and the roadmap enablers for the next decade}.
+In: \bbtitle{Optical Microlithography XIX},
+vol. \bseriesno{6154},
+p. \bfpage{615401}
+(\byear{2006}).
+\bcomment{SPIE}
+\end{bchapter}
+\endbibitem
+
+%%% 2
+\bibitem[\protect\citeauthoryear{Cecil et~al.}{2022}]{cecil2022advances}
+\begin{barticle}
+\bauthor{\bsnm{Cecil}, \binits{T.}},
+\bauthor{\bsnm{Peng}, \binits{D.}},
+\bauthor{\bsnm{Abrams}, \binits{D.}},
+\bauthor{\bsnm{Osher}, \binits{S.J.}},
+\bauthor{\bsnm{Yablonovitch}, \binits{E.}}:
+\batitle{Advances in inverse lithography}.
+\bjtitle{ACS Photonics}
+\bvolume{10}(\bissue{4}),
+\bfpage{910}--\blpage{918}
+(\byear{2022})
+\end{barticle}
+\endbibitem
+
+%%% 3
+\bibitem[\protect\citeauthoryear{Chen et~al.}{2022}]{chen2022label}
+\begin{barticle}
+\bauthor{\bsnm{Chen}, \binits{J.-T.}},
+\bauthor{\bsnm{Zhao}, \binits{Y.-Y.}},
+\bauthor{\bsnm{Zhang}, \binits{Y.}},
+\bauthor{\bsnm{Zhu}, \binits{J.-X.}},
+\bauthor{\bsnm{Duan}, \binits{X.-M.}}:
+\batitle{Label-free neural networks-based inverse lithography technology}.
+\bjtitle{Optics Express}
+\bvolume{30}(\bissue{25}),
+\bfpage{45312}--\blpage{45326}
+(\byear{2022})
+\end{barticle}
+\endbibitem
+
+%%% 4
+\bibitem[\protect\citeauthoryear{Zheng et~al.}{2023}]{Zheng2023}
+\begin{bchapter}
+\bauthor{\bsnm{Zheng}, \binits{S.}},
+\bauthor{\bsnm{Yu}, \binits{B.}},
+\bauthor{\bsnm{Wong}, \binits{M.}}:
+\bctitle{Openilt: An open source inverse lithography technique framework (invited paper)}.
+In: \bbtitle{2023 IEEE 15th International Conference on ASIC (ASICON)},
+pp. \bfpage{1}--\blpage{4}
+(\byear{2023}).
+\doiurl{10.1109/ASICON58565.2023.10396314}
+\end{bchapter}
+\endbibitem
+
+%%% 5
+\bibitem[\protect\citeauthoryear{{Hopkins}}{1953}]{1953RSPSA}
+\begin{barticle}
+\bauthor{\bsnm{{Hopkins}}, \binits{H.H.}}:
+\batitle{{On the Diffraction Theory of Optical Images}}.
+\bjtitle{Proceedings of the Royal Society of London Series A}
+\bvolume{217}(\bissue{1130}),
+\bfpage{408}--\blpage{432}
+(\byear{1953})
+\doiurl{10.1098/rspa.1953.0071}
+\end{barticle}
+\endbibitem
+
+%%% 6
+\bibitem[\protect\citeauthoryear{Gallatin}{2005}]{Gallatin2005}
+\begin{botherref}
+\oauthor{\bsnm{Gallatin}, \binits{G.}}:
+Resist blur and line edge roughness.
+Proc. SPIE
+\textbf{14}
+(2005)
+\end{botherref}
+\endbibitem
+
+%%% 7
+\bibitem[\protect\citeauthoryear{{De Bisschop}}{2017}]{2017JMM&M}
+\begin{barticle}
+\bauthor{\bsnm{{De Bisschop}}, \binits{P.}}:
+\batitle{{Stochastic effects in EUV lithography: random, local CD variability, and printing failures}}.
+\bjtitle{Journal of Micro/Nanolithography, MEMS, and MOEMS}
+\bvolume{16},
+\bfpage{041013}
+(\byear{2017})
+\doiurl{10.1117/1.JMM.16.4.041013}
+\end{barticle}
+\endbibitem
+
+%%% 8
+\bibitem[\protect\citeauthoryear{Ma et~al.}{2019}]{Ma19}
+\begin{barticle}
+\bauthor{\bsnm{Ma}, \binits{X.}},
+\bauthor{\bsnm{Wang}, \binits{Z.}},
+\bauthor{\bsnm{Zhu}, \binits{J.}},
+\bauthor{\bsnm{Zhang}, \binits{S.}},
+\bauthor{\bsnm{Arce}, \binits{G.R.}},
+\bauthor{\bsnm{Zhao}, \binits{S.}}:
+\batitle{Nonlinear compressive inverse lithography aided by low-rank regularization}.
+\bjtitle{Opt. Express}
+\bvolume{27}(\bissue{21}),
+\bfpage{29992}--\blpage{30008}
+(\byear{2019})
+\doiurl{10.1364/OE.27.029992}
+\end{barticle}
+\endbibitem
+
+%%% 9
+\bibitem[\protect\citeauthoryear{Owens et~al.}{2008}]{4490127}
+\begin{barticle}
+\bauthor{\bsnm{Owens}, \binits{J.D.}},
+\bauthor{\bsnm{Houston}, \binits{M.}},
+\bauthor{\bsnm{Luebke}, \binits{D.}},
+\bauthor{\bsnm{Green}, \binits{S.}},
+\bauthor{\bsnm{Stone}, \binits{J.E.}},
+\bauthor{\bsnm{Phillips}, \binits{J.C.}}:
+\batitle{Gpu computing}.
+\bjtitle{Proceedings of the IEEE}
+\bvolume{96}(\bissue{5}),
+\bfpage{879}--\blpage{899}
+(\byear{2008})
+\doiurl{10.1109/JPROC.2008.917757}
+\end{barticle}
+\endbibitem
+
+%%% 10
+\bibitem[\protect\citeauthoryear{Kirk and Hwu}{2010}]{kirk10}
+\begin{bbook}
+\bauthor{\bsnm{Kirk}, \binits{D.B.}},
+\bauthor{\bsnm{Hwu}, \binits{W.-m.W.}}:
+\bbtitle{Programming Massively Parallel Processors: A Hands-on Approach}.
+\bsertitle{Applications of GPU Computing Series}.
+\bpublisher{Morgan Kaufmann Publishers},
+\blocation{Burlington, MA}
+(\byear{2010})
+\end{bbook}
+\endbibitem
+
+%%% 11
+\bibitem[\protect\citeauthoryear{Zhang et~al.}{2015}]{ZHANG2015176}
+\begin{barticle}
+\bauthor{\bsnm{Zhang}, \binits{F.}},
+\bauthor{\bsnm{Hu}, \binits{C.}},
+\bauthor{\bsnm{Wu}, \binits{P.-C.}},
+\bauthor{\bsnm{Zhang}, \binits{H.}},
+\bauthor{\bsnm{Wong}, \binits{M.D.F.}}:
+\batitle{Accelerating aerial image simulation using improved cpu/gpu collaborative computing}.
+\bjtitle{Computers and Electrical Engineering}
+\bvolume{46},
+\bfpage{176}--\blpage{189}
+(\byear{2015})
+\doiurl{10.1016/j.compeleceng.2015.05.018}
+\end{barticle}
+\endbibitem
+
+%%% 12
+\bibitem[\protect\citeauthoryear{Zheng et~al.}{2024}]{Zheng2024}
+\begin{bchapter}
+\bauthor{\bsnm{Zheng}, \binits{S.}},
+\bauthor{\bsnm{Xiao}, \binits{G.}},
+\bauthor{\bsnm{Yan}, \binits{G.}},
+\bauthor{\bsnm{Dong}, \binits{M.}},
+\bauthor{\bsnm{Li}, \binits{Y.}},
+\bauthor{\bsnm{Chen}, \binits{H.}},
+\bauthor{\bsnm{Ma}, \binits{Y.}},
+\bauthor{\bsnm{Yu}, \binits{B.}},
+\bauthor{\bsnm{Wong}, \binits{M.}}:
+\bctitle{Model-based opc extension in openilt}.
+In: \bbtitle{2024 2nd International Symposium of Electronics Design Automation (ISEDA)},
+pp. \bfpage{568}--\blpage{573}
+(\byear{2024}).
+\doiurl{10.1109/ISEDA62518.2024.10617951}
+\end{bchapter}
+\endbibitem
+
+%%% 13
+\bibitem[\protect\citeauthoryear{Yang and Ren}{2024}]{yang2024gpuacceleratedinverselithographyhigh}
+\begin{botherref}
+\oauthor{\bsnm{Yang}, \binits{H.}},
+\oauthor{\bsnm{Ren}, \binits{H.}}:
+GPU-Accelerated Inverse Lithography Towards High Quality Curvy Mask Generation
+(2024).
+\url{https://arxiv.org/abs/2411.07311}
+\end{botherref}
+\endbibitem
+
+%%% 14
+\bibitem[\protect\citeauthoryear{{NVIDIA}}{2024}]{Singh}
+\begin{botherref}
+\oauthor{\bsnm{{NVIDIA}}}:
+TSMC and NVIDIA Transform Semiconductor Manufacturing with cuLitho Computational Lithography.
+NVIDIA Blog. Available at: \url{https://blogs.nvidia.com/blog/tsmc-culitho-computational-lithography/}. Accessed: 2025-12-18
+(2024)
+\end{botherref}
+\endbibitem
+
+%%% 15
+\bibitem[\protect\citeauthoryear{Shalf et~al.}{2010}]{10.5555/1964238.1964240}
+\begin{bchapter}
+\bauthor{\bsnm{Shalf}, \binits{J.}},
+\bauthor{\bsnm{Dosanjh}, \binits{S.}},
+\bauthor{\bsnm{Morrison}, \binits{J.}}:
+\bctitle{Exascale computing technology challenges}.
+In: \bbtitle{Proceedings of the 9th International Conference on High Performance Computing for Computational Science}.
+\bsertitle{VECPAR'10},
+pp. \bfpage{1}--\blpage{25}.
+\bpublisher{Springer},
+\blocation{Berlin, Heidelberg}
+(\byear{2010})
+\end{bchapter}
+\endbibitem
+
+%%% 16
+\bibitem[\protect\citeauthoryear{Nickolls et~al.}{2008}]{Nickolls08}
+\begin{barticle}
+\bauthor{\bsnm{Nickolls}, \binits{J.}},
+\bauthor{\bsnm{Buck}, \binits{I.}},
+\bauthor{\bsnm{Garland}, \binits{M.}},
+\bauthor{\bsnm{Skadron}, \binits{K.}}:
+\batitle{Scalable parallel programming with cuda}.
+\bjtitle{Queue}
+\bvolume{6},
+\bfpage{40}--\blpage{53}
+(\byear{2008})
+\doiurl{10.1145/1401132.1401152}
+\end{barticle}
+\endbibitem
+
+%%% 17
+\bibitem[\protect\citeauthoryear{Hopkins}{1953}]{Hopkins88}
+\begin{barticle}
+\bauthor{\bsnm{Hopkins}, \binits{H.H.}}:
+\batitle{On the diffraction theory of optical images}.
+\bjtitle{Proceedings of the Royal Society of London. A. Mathematical and Physical Sciences}
+\bvolume{217}(\bissue{1130}),
+\bfpage{408}--\blpage{432}
+(\byear{1953})
+\doiurl{10.1098/rspa.1953.0071}
+{\href{https://arxiv.org/abs/https://royalsocietypublishing.org/rspa/article-pdf/217/1130/408/46374/rspa.1953.0071.pdf}{{https://royalsocietypublishing.org/rspa/article-pdf/217/1130/408/46374/rspa.1953.0071.pdf}}}
+\end{barticle}
+\endbibitem
+
+%%% 18
+\bibitem[\protect\citeauthoryear{Mack}{2007}]{Mack2007FundamentalPO}
+\begin{bchapter}
+\bauthor{\bsnm{Mack}, \binits{C.A.}}:
+\bctitle{Fundamental principles of optical lithography : the science of microfabrication}.
+(\byear{2007}).
+\burl{https://api.semanticscholar.org/CorpusID:136637173}
+\end{bchapter}
+\endbibitem
+
+%%% 19
+\bibitem[\protect\citeauthoryear{Wong}{2001}]{Wong2001ResolutionET}
+\begin{bchapter}
+\bauthor{\bsnm{Wong}, \binits{A.K.}}:
+\bctitle{Resolution enhancement techniques in optical lithography}.
+(\byear{2001}).
+\burl{https://api.semanticscholar.org/CorpusID:137202131}
+\end{bchapter}
+\endbibitem
+
+%%% 20
+\bibitem[\protect\citeauthoryear{Govindaraju et~al.}{2008}]{Govindaraju08}
+\begin{bchapter}
+\bauthor{\bsnm{Govindaraju}, \binits{N.}},
+\bauthor{\bsnm{Lloyd}, \binits{B.}},
+\bauthor{\bsnm{Dotsenko}, \binits{Y.}},
+\bauthor{\bsnm{Smith}, \binits{B.}},
+\bauthor{\bsnm{Manferdelli}, \binits{J.}}:
+\bctitle{High performance discrete fourier transforms on graphics processors},
+p. \bfpage{2}
+(\byear{2008}).
+\doiurl{10.1109/SC.2008.5213922}
+\end{bchapter}
+\endbibitem
+
+%%% 21
+\bibitem[\protect\citeauthoryear{Yang and Ren}{2025}]{Yang2025}
+\begin{bchapter}
+\bauthor{\bsnm{Yang}, \binits{H.}},
+\bauthor{\bsnm{Ren}, \binits{H.}}:
+\bctitle{Gpu-accelerated inverse lithography towards high quality curvy mask generation}.
+In: \bbtitle{Proceedings of the 2025 International Symposium on Physical Design}.
+\bsertitle{ISPD '25},
+pp. \bfpage{42}--\blpage{50}.
+\bpublisher{Association for Computing Machinery},
+\blocation{New York, NY, USA}
+(\byear{2025}).
+\doiurl{10.1145/3698364.3705343} .
+\burl{https://doi.org/10.1145/3698364.3705343}
+\end{bchapter}
+\endbibitem
+
+%%% 22
+\bibitem[\protect\citeauthoryear{Neureuther}{1992}]{NEUREUTHER1992377}
+\begin{barticle}
+\bauthor{\bsnm{Neureuther}, \binits{A.R.}}:
+\batitle{Simulation of optical lithography and inspection}.
+\bjtitle{Microelectronic Engineering}
+\bvolume{17}(\bissue{1}),
+\bfpage{377}--\blpage{384}
+(\byear{1992})
+\doiurl{10.1016/0167-9317(92)90077-5}
+\end{barticle}
+\endbibitem
+
+%%% 23
+\bibitem[\protect\citeauthoryear{{Socha} et~al.}{2005}]{Socha66}
+\begin{bchapter}
+\bauthor{\bsnm{{Socha}}, \binits{R.}},
+\bauthor{\bsnm{{Shi}}, \binits{X.}},
+\bauthor{\bsnm{{LeHoty}}, \binits{D.}}:
+\bctitle{{Simultaneous source mask optimization (SMO)}}.
+In: \beditor{\bsnm{{Komuro}}, \binits{M.}} (ed.)
+\bbtitle{Photomask and Next-Generation Lithography Mask Technology XII}.
+\bsertitle{Society of Photo-Optical Instrumentation Engineers (SPIE) Conference Series},
+vol. \bseriesno{5853},
+pp. \bfpage{180}--\blpage{193}
+(\byear{2005}).
+\doiurl{10.1117/12.617431}
+\end{bchapter}
+\endbibitem
+
+%%% 24
+\bibitem[\protect\citeauthoryear{Gu and Zakhor}{2008}]{Gu2008}
+\begin{barticle}
+\bauthor{\bsnm{Gu}, \binits{A.}},
+\bauthor{\bsnm{Zakhor}, \binits{A.}}:
+\batitle{Optical proximity correction with linear regression}.
+\bjtitle{IEEE Transactions on Semiconductor Manufacturing}
+\bvolume{21}(\bissue{2}),
+\bfpage{263}--\blpage{271}
+(\byear{2008})
+\doiurl{10.1109/TSM.2008.2000283}
+\end{barticle}
+\endbibitem
+
+%%% 25
+\bibitem[\protect\citeauthoryear{Ma et~al.}{2018}]{ma2018fast}
+\begin{barticle}
+\bauthor{\bsnm{Ma}, \binits{X.}},
+\bauthor{\bsnm{Wang}, \binits{Z.}},
+\bauthor{\bsnm{Li}, \binits{Y.}},
+\bauthor{\bsnm{Arce}, \binits{G.R.}},
+\bauthor{\bsnm{Dong}, \binits{L.}},
+\bauthor{\bsnm{Garcia-Frias}, \binits{J.}}:
+\batitle{Fast optical proximity correction method based on nonlinear compressive sensing}.
+\bjtitle{Optics Express}
+\bvolume{26}(\bissue{11}),
+\bfpage{14479}--\blpage{14498}
+(\byear{2018})
+\end{barticle}
+\endbibitem
+
+%%% 26
+\bibitem[\protect\citeauthoryear{Pang et~al.}{2006}]{pang2006inverse}
+\begin{bchapter}
+\bauthor{\bsnm{Pang}, \binits{L.}},
+\bauthor{\bsnm{Liu}, \binits{Y.}},
+\bauthor{\bsnm{Abrams}, \binits{D.}}:
+\bctitle{Inverse lithography technology (ilt): What is the impact to the photomask industry?}
+In: \bbtitle{Photomask and Next-Generation Lithography Mask Technology XIII},
+vol. \bseriesno{6283},
+pp. \bfpage{233}--\blpage{243}
+(\byear{2006}).
+\bcomment{SPIE}
+\end{bchapter}
+\endbibitem
+
+%%% 27
+\bibitem[\protect\citeauthoryear{Pang}{2021}]{pang2021inverse}
+\begin{barticle}
+\bauthor{\bsnm{Pang}, \binits{L.}}:
+\batitle{Inverse lithography technology: 30 years from concept to practical, full-chip reality}.
+\bjtitle{Journal of Micro/Nanopatterning, Materials, and Metrology}
+\bvolume{20}(\bissue{3}),
+\bfpage{030901}--\blpage{030901}
+(\byear{2021})
+\end{barticle}
+\endbibitem
+
+%%% 28
+\bibitem[\protect\citeauthoryear{Navarro et~al.}{2014}]{navarro2014survey}
+\begin{barticle}
+\bauthor{\bsnm{Navarro}, \binits{C.A.}},
+\bauthor{\bsnm{Hitschfeld-Kahler}, \binits{N.}},
+\bauthor{\bsnm{Mateu}, \binits{L.}}:
+\batitle{A survey on parallel computing and its applications in data-parallel problems using gpu architectures}.
+\bjtitle{Communications in computational physics}
+\bvolume{15}(\bissue{2}),
+\bfpage{285}--\blpage{329}
+(\byear{2014})
+\end{barticle}
+\endbibitem
+
+%%% 29
+\bibitem[\protect\citeauthoryear{Cao et~al.}{2023}]{Cao2023}
+\begin{barticle}
+\bauthor{\bsnm{Cao}, \binits{Q.}},
+\bauthor{\bsnm{Xu}, \binits{P.}},
+\bauthor{\bsnm{Sun}, \binits{S.}},
+\bauthor{\bsnm{He}, \binits{J.}},
+\bauthor{\bsnm{Wei}, \binits{J.}},
+\bauthor{\bsnm{Shi}, \binits{J.}},
+\bauthor{\bsnm{Wei}, \binits{Y.}}:
+\batitle{{Curvilinear mask optimization with refined generative adversarial nets}}.
+\bjtitle{Journal of Micro/Nanopatterning, Materials, and Metrology}
+\bvolume{22}(\bissue{1}),
+\bfpage{013201}
+(\byear{2023})
+\doiurl{10.1117/1.JMM.22.1.013201}
+\end{barticle}
+\endbibitem
+
+%%% 30
+\bibitem[\protect\citeauthoryear{Jiang et~al.}{2021}]{jiang2021neural}
+\begin{barticle}
+\bauthor{\bsnm{Jiang}, \binits{B.}},
+\bauthor{\bsnm{Liu}, \binits{L.}},
+\bauthor{\bsnm{Ma}, \binits{Y.}},
+\bauthor{\bsnm{Yu}, \binits{B.}},
+\bauthor{\bsnm{Young}, \binits{E.F.}}:
+\batitle{Neural-ilt 2.0: Migrating ilt to domain-specific and multitask-enabled neural network}.
+\bjtitle{IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}
+\bvolume{41}(\bissue{8}),
+\bfpage{2671}--\blpage{2684}
+(\byear{2021})
+\end{barticle}
+\endbibitem
+
+%%% 31
+\bibitem[\protect\citeauthoryear{Zhang et~al.}{2020}]{Zhang2020}
+\begin{barticle}
+\bauthor{\bsnm{Zhang}, \binits{X.}},
+\bauthor{\bsnm{Ma}, \binits{X.}},
+\bauthor{\bsnm{Zhang}, \binits{S.}},
+\bauthor{\bsnm{Pan}, \binits{Y.}},
+\bauthor{\bsnm{Arce}, \binits{G.}}:
+\batitle{Study of inverse lithography approaches based on deep learning}.
+\bjtitle{Journal of Microelectronic Manufacturing}
+\bvolume{3},
+\bfpage{1}--\blpage{8}
+(\byear{2020})
+\doiurl{10.33079/jomm.20030301}
+\end{barticle}
+\endbibitem
+
+%%% 32
+\bibitem[\protect\citeauthoryear{Paszke et~al.}{2019}]{paszke2019pytorch}
+\begin{botherref}
+\oauthor{\bsnm{Paszke}, \binits{A.}},
+\oauthor{\bsnm{Gross}, \binits{S.}},
+\oauthor{\bsnm{Massa}, \binits{F.}},
+\oauthor{\bsnm{Lerer}, \binits{A.}},
+\oauthor{\bsnm{Bradbury}, \binits{J.}},
+\oauthor{\bsnm{Chanan}, \binits{G.}},
+\oauthor{\bsnm{Killeen}, \binits{T.}},
+\oauthor{\bsnm{Lin}, \binits{Z.}},
+\oauthor{\bsnm{Gimelshein}, \binits{N.}},
+\oauthor{\bsnm{Antiga}, \binits{L.}},
+\oauthor{\bsnm{Desmaison}, \binits{A.}},
+\oauthor{\bsnm{Köpf}, \binits{A.}},
+\oauthor{\bsnm{Yang}, \binits{E.}},
+\oauthor{\bsnm{DeVito}, \binits{Z.}},
+\oauthor{\bsnm{Raison}, \binits{M.}},
+\oauthor{\bsnm{Tejani}, \binits{A.}},
+\oauthor{\bsnm{Chilamkurthy}, \binits{S.}},
+\oauthor{\bsnm{Steiner}, \binits{B.}},
+\oauthor{\bsnm{Fang}, \binits{L.}},
+\oauthor{\bsnm{Bai}, \binits{J.}},
+\oauthor{\bsnm{Chintala}, \binits{S.}}:
+PyTorch: An Imperative Style, High-Performance Deep Learning Library.
+cite arxiv:1912.01703Comment: 12 pages, 3 figures, NeurIPS 2019
+(2019).
+\url{http://arxiv.org/abs/1912.01703}
+\end{botherref}
+\endbibitem
+
+%%% 33
+\bibitem[\protect\citeauthoryear{Subramany}{2011}]{subramany2011gpu}
+\begin{botherref}
+\oauthor{\bsnm{Subramany}, \binits{L.}}:
+Gpu based lithography simulation and opc.
+PhD thesis,
+University of Massachusetts Amherst
+(2011)
+\end{botherref}
+\endbibitem
+
+%%% 34
+\bibitem[\protect\citeauthoryear{Smith and Mack}{2003}]{smith2003methods}
+\begin{bchapter}
+\bauthor{\bsnm{Smith}, \binits{M.D.}},
+\bauthor{\bsnm{Mack}, \binits{C.A.}}:
+\bctitle{Methods for benchmarking photolithography simulators}.
+In: \bbtitle{Optical Microlithography XVI},
+vol. \bseriesno{5040},
+pp. \bfpage{57}--\blpage{68}
+(\byear{2003}).
+\bcomment{SPIE}
+\end{bchapter}
+\endbibitem
+
+%%% 35
+\bibitem[\protect\citeauthoryear{Torunoglu et~al.}{2010}]{torunoglu2010gpu}
+\begin{bchapter}
+\bauthor{\bsnm{Torunoglu}, \binits{I.}},
+\bauthor{\bsnm{Karakas}, \binits{A.}},
+\bauthor{\bsnm{Elsen}, \binits{E.}},
+\bauthor{\bsnm{Andrus}, \binits{C.}},
+\bauthor{\bsnm{Bremen}, \binits{B.}},
+\bauthor{\bsnm{Dimitrov}, \binits{B.}},
+\bauthor{\bsnm{Ungar}, \binits{J.}}:
+\bctitle{A gpu-based full-chip inverse lithography solution for random patterns}.
+In: \bbtitle{Design for Manufacturability Through Design-Process Integration IV},
+vol. \bseriesno{7641},
+pp. \bfpage{340}--\blpage{347}
+(\byear{2010}).
+\bcomment{SPIE}
+\end{bchapter}
+\endbibitem
+
+%%% 36
+\bibitem[\protect\citeauthoryear{Shamoun et~al.}{2021}]{shamoun2021multi}
+\begin{barticle}
+\bauthor{\bsnm{Shamoun}, \binits{B.}},
+\bauthor{\bsnm{Chandramouli}, \binits{M.}},
+\bauthor{\bsnm{Liu}, \binits{B.}},
+\bauthor{\bsnm{Juday}, \binits{R.K.}},
+\bauthor{\bsnm{Bucay}, \binits{I.}},
+\bauthor{\bsnm{Sowers}, \binits{A.T.}},
+\bauthor{\bsnm{Abboud}, \binits{F.E.}}:
+\batitle{Multi-beam mask writer in euv era: challenges and opportunities}.
+\bjtitle{Novel Patterning Technologies 2021}
+\bvolume{11610},
+\bfpage{64}--\blpage{82}
+(\byear{2021})
+\end{barticle}
+\endbibitem
+
+%%% 37
+\bibitem[\protect\citeauthoryear{L’Ecuyer}{2015}]{LEcuyer2015}
+\begin{bchapter}
+\bauthor{\bsnm{L’Ecuyer}, \binits{P.}}:
+\bctitle{Random number generation with multiple streams for sequential and parallel computing},
+pp. \bfpage{31}--\blpage{44}
+(\byear{2015}).
+\doiurl{10.1109/WSC.2015.7408151}
+\end{bchapter}
+\endbibitem
+
+%%% 38
+\bibitem[\protect\citeauthoryear{Sakane et~al.}{2022}]{Sakane2022}
+\begin{botherref}
+\oauthor{\bsnm{Sakane}, \binits{S.}},
+\oauthor{\bsnm{Takaki}, \binits{T.}},
+\oauthor{\bsnm{Aoki}, \binits{T.}}:
+Parallel-gpu-accelerated adaptive mesh refinement for three-dimensional phase-field simulation of dendritic growth during solidification of binary alloy.
+Materials Theory
+\textbf{6}
+(2022)
+\doiurl{10.1186/s41313-021-00033-5}
+\end{botherref}
+\endbibitem
+
+%%% 39
+\bibitem[\protect\citeauthoryear{Shiktorov et~al.}{2003}]{Gruzinskis2008}
+\begin{botherref}
+\oauthor{\bsnm{Shiktorov}, \binits{P.}},
+\oauthor{\bsnm{Starikov}, \binits{E.}},
+\oauthor{\bsnm{Gruzinskis}, \binits{V.}},
+\oauthor{\bsnm{Reggiani}, \binits{L.}},
+\oauthor{\bsnm{Varani}, \binits{L.}},
+\oauthor{\bsnm{Vaissiere}, \binits{J.}},
+\oauthor{\bsnm{Perez}, \binits{S.}}:
+Monte carlo simulation of electronic noise in semiconductor materials and devices operating under cyclostationary conditions: Special issue on the proceedings of the international workshop on computational electronics (iwce-9)
+(2003)
+\end{botherref}
+\endbibitem
+
+%%% 40
+\bibitem[\protect\citeauthoryear{{Synopsys, Inc.}}{2024}]{SynopsysSLitho}
+\begin{botherref}
+\oauthor{\bsnm{{Synopsys, Inc.}}}:
+{S-Litho} Computational Lithography Platform.
+\url{https://www.synopsys.com/manufacturing/lithography/s-litho.html}.
+Accessed: 2025-12-17
+(2024)
+\end{botherref}
+\endbibitem
+
+%%% 41
+\bibitem[\protect\citeauthoryear{Pang et~al.}{2021}]{pang2021breakthrough}
+\begin{barticle}
+\bauthor{\bsnm{Pang}, \binits{L.}},
+\bauthor{\bsnm{Russell}, \binits{E.V.}},
+\bauthor{\bsnm{Baggenstoss}, \binits{B.}},
+\bauthor{\bsnm{Lee}, \binits{M.}},
+\bauthor{\bsnm{Digaum}, \binits{J.}},
+\bauthor{\bsnm{Yang}, \binits{M.-C.}},
+\bauthor{\bsnm{Ungar}, \binits{P.J.}},
+\bauthor{\bsnm{Bouaricha}, \binits{A.}},
+\bauthor{\bsnm{Wang}, \binits{K.}},
+\bauthor{\bsnm{Su}, \binits{B.}}, \betal:
+\batitle{Breakthrough curvilinear ilt enabled by multi-beam mask writing}.
+\bjtitle{Journal of Micro/Nanopatterning, Materials, and Metrology}
+\bvolume{20}(\bissue{4}),
+\bfpage{041405}--\blpage{041405}
+(\byear{2021})
+\end{barticle}
+\endbibitem
+
+%%% 42
+\bibitem[\protect\citeauthoryear{Yu et~al.}{2023}]{YuZiyang2023}
+\begin{barticle}
+\bauthor{\bsnm{Yu}, \binits{Z.}},
+\bauthor{\bsnm{Chen}, \binits{G.}},
+\bauthor{\bsnm{Ma}, \binits{Y.}},
+\bauthor{\bsnm{Yu}, \binits{B.}}:
+\batitle{A gpu-enabled level-set method for mask optimization}.
+\bjtitle{IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}
+\bvolume{42}(\bissue{2}),
+\bfpage{594}--\blpage{605}
+(\byear{2023})
+\doiurl{10.1109/TCAD.2022.3175939}
+\end{barticle}
+\endbibitem
+
+%%% 43
+\bibitem[\protect\citeauthoryear{Choi et~al.}{2021}]{Choi2021}
+\begin{bchapter}
+\bauthor{\bsnm{Choi}, \binits{Y.}},
+\bauthor{\bsnm{Fujimura}, \binits{A.}},
+\bauthor{\bsnm{Shendre}, \binits{A.}}:
+\bctitle{{Curvilinear masks: an overview}}.
+In: \beditor{\bsnm{Renwick}, \binits{S.P.}} (ed.)
+\bbtitle{Photomask Technology 2021},
+vol. \bseriesno{11855},
+p. \bfpage{118550}.
+\bpublisher{SPIE}, \blocation{???}
+(\byear{2021}).
+\doiurl{10.1117/12.2601916} .
+\bcomment{International Society for Optics and Photonics}.
+\burl{https://doi.org/10.1117/12.2601916}
+\end{bchapter}
+\endbibitem
+
+%%% 44
+\bibitem[\protect\citeauthoryear{Yu et~al.}{2006}]{Yu2024}
+\begin{botherref}
+\oauthor{\bsnm{Yu}, \binits{P.}},
+\oauthor{\bsnm{Pan}, \binits{D.}},
+\oauthor{\bsnm{Mack}, \binits{C.}}:
+Fast lithography simulation under focus variations for opc and layout optimizations.
+Proceedings of SPIE - The International Society for Optical Engineering
+\textbf{6156}
+(2006)
+\doiurl{10.1117/12.658110}
+\end{botherref}
+\endbibitem
+
+%%% 45
+\bibitem[\protect\citeauthoryear{Shendre and Fujimura}{2024}]{Shandre2023}
+\begin{barticle}
+\bauthor{\bsnm{Shendre}, \binits{A.}},
+\bauthor{\bsnm{Fujimura}, \binits{A.}}:
+\batitle{{Leaping into the curvy world with GPU-accelerated O(p) computing}}.
+\bjtitle{Journal of Micro/Nanopatterning, Materials, and Metrology}
+\bvolume{23}(\bissue{4}),
+\bfpage{041505}
+(\byear{2024})
+\doiurl{10.1117/1.JMM.23.4.041505}
+\end{barticle}
+\endbibitem
+
+%%% 46
+\bibitem[\protect\citeauthoryear{Lan et~al.}{2018}]{Lan2018}
+\begin{bchapter}
+\bauthor{\bsnm{Lan}, \binits{S.}},
+\bauthor{\bsnm{Liu}, \binits{J.}},
+\bauthor{\bsnm{Wang}, \binits{Y.}},
+\bauthor{\bsnm{Zhao}, \binits{K.}},
+\bauthor{\bsnm{Li}, \binits{J.}}:
+\bctitle{{Deep learning assisted fast mask optimization}}.
+In: \beditor{\bsnm{Kye}, \binits{J.}} (ed.)
+\bbtitle{Optical Microlithography XXXI},
+vol. \bseriesno{10587},
+p. \bfpage{105870}.
+\bpublisher{SPIE}, \blocation{???}
+(\byear{2018}).
+\doiurl{10.1117/12.2297514} .
+\bcomment{International Society for Optics and Photonics}.
+\burl{https://doi.org/10.1117/12.2297514}
+\end{bchapter}
+\endbibitem
+
+%%% 47
+\bibitem[\protect\citeauthoryear{Chen et~al.}{2023a}]{Chen2023DevelSet}
+\begin{barticle}
+\bauthor{\bsnm{Chen}, \binits{G.}},
+\bauthor{\bsnm{Yu}, \binits{Z.}},
+\bauthor{\bsnm{Liu}, \binits{H.}},
+\bauthor{\bsnm{Ma}, \binits{Y.}},
+\bauthor{\bsnm{Yu}, \binits{B.}}:
+\batitle{Develset: Deep neural level set for instant mask optimization}.
+\bjtitle{IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}
+\bvolume{42}(\bissue{12}),
+\bfpage{5020}--\blpage{5033}
+(\byear{2023})
+\doiurl{10.1109/TCAD.2023.3286262} .
+\bcomment{Publisher Copyright: {\textcopyright} 1982-2012 IEEE.}
+\end{barticle}
+\endbibitem
+
+%%% 48
+\bibitem[\protect\citeauthoryear{Chen et~al.}{2023b}]{Chen2023MatrixCover}
+\begin{botherref}
+\oauthor{\bsnm{Chen}, \binits{G.}},
+\oauthor{\bsnm{Yang}, \binits{H.Y.}},
+\oauthor{\bsnm{Yu}, \binits{B.}}:
+GPU-accelerated Matrix Cover Algorithm for Multiple Patterning Layout Decomposition
+(2023).
+\doiurl{10.48550/arXiv.2303.14335}
+\end{botherref}
+\endbibitem
+
+%%% 49
+\bibitem[\protect\citeauthoryear{Lin et~al.}{2020}]{Lin2020}
+\begin{barticle}
+\bauthor{\bsnm{Lin}, \binits{S.}},
+\bauthor{\bsnm{Hammood}, \binits{M.}},
+\bauthor{\bsnm{Yun}, \binits{H.}},
+\bauthor{\bsnm{Luan}, \binits{E.}},
+\bauthor{\bsnm{Jaeger}, \binits{N.A.F.}},
+\bauthor{\bsnm{Chrostowski}, \binits{L.}}:
+\batitle{Computational lithography for silicon photonics design}.
+\bjtitle{IEEE Journal of Selected Topics in Quantum Electronics}
+\bvolume{26}(\bissue{2}),
+\bfpage{1}--\blpage{8}
+(\byear{2020})
+\doiurl{10.1109/JSTQE.2019.2958931}
+\end{barticle}
+\endbibitem
+
+%%% 50
+\bibitem[\protect\citeauthoryear{Tseng et~al.}{2003}]{Tseng2003}
+\begin{barticle}
+\bauthor{\bsnm{Tseng}, \binits{A.A.}},
+\bauthor{\bsnm{Chen}, \binits{K.}},
+\bauthor{\bsnm{Chen}, \binits{C.D.}},
+\bauthor{\bsnm{Ma}, \binits{K.J.}}:
+\batitle{Electron beam lithography in nanoscale fabrication: recent development}.
+\bjtitle{IEEE Transactions on Electronics Packaging Manufacturing}
+\bvolume{26}(\bissue{2}),
+\bfpage{141}--\blpage{149}
+(\byear{2003})
+\doiurl{10.1109/TEPM.2003.817714}
+\end{barticle}
+\endbibitem
+
+%%% 51
+\bibitem[\protect\citeauthoryear{Chang et~al.}{2001}]{CHANG2001117}
+\begin{barticle}
+\bauthor{\bsnm{Chang}, \binits{T.H.P.}},
+\bauthor{\bsnm{Mankos}, \binits{M.}},
+\bauthor{\bsnm{Lee}, \binits{K.Y.}},
+\bauthor{\bsnm{Muray}, \binits{L.P.}}:
+\batitle{Multiple electron-beam lithography}.
+\bjtitle{Microelectronic Engineering}
+\bvolume{57-58},
+\bfpage{117}--\blpage{135}
+(\byear{2001})
+\doiurl{10.1016/S0167-9317(01)00528-7} .
+\bcomment{Micro- and Nano-Engineering 2000}
+\end{barticle}
+\endbibitem
+
+%%% 52
+\bibitem[\protect\citeauthoryear{Yasuda et~al.}{2023}]{yasuda2023recent}
+\begin{barticle}
+\bauthor{\bsnm{Yasuda}, \binits{J.}},
+\bauthor{\bsnm{Nomura}, \binits{H.}},
+\bauthor{\bsnm{Matsumoto}, \binits{H.}},
+\bauthor{\bsnm{Nakayamada}, \binits{N.}},
+\bauthor{\bsnm{Yamashita}, \binits{H.}}:
+\batitle{Recent progress and future of electron multi-beam mask writer}.
+\bjtitle{Japanese Journal of Applied Physics}
+\bvolume{62}(\bissue{SG}),
+\bfpage{0803}
+(\byear{2023})
+\end{barticle}
+\endbibitem
+
+%%% 53
+\bibitem[\protect\citeauthoryear{Levinson and Brunner}{2018}]{levinson2018current}
+\begin{bchapter}
+\bauthor{\bsnm{Levinson}, \binits{H.J.}},
+\bauthor{\bsnm{Brunner}, \binits{T.A.}}:
+\bctitle{Current challenges and opportunities for euv lithography}.
+In: \bbtitle{International Conference on Extreme Ultraviolet Lithography 2018},
+vol. \bseriesno{10809},
+pp. \bfpage{5}--\blpage{11}
+(\byear{2018}).
+\bcomment{SPIE}
+\end{bchapter}
+\endbibitem
+
+%%% 54
+\bibitem[\protect\citeauthoryear{Negele}{2025}]{negele2025}
+\begin{bchapter}
+\bauthor{\bsnm{Negele}, \binits{M.}}:
+\bctitle{Acceleration potential in the {GPU} design-to-manufacturing pipeline}.
+In: \bbtitle{ICML Workshop on Technical AI Governance (TAIG)}
+(\byear{2025}).
+\burl{https://openreview.net/forum?id=lg1jX16PT8}
+\end{bchapter}
+\endbibitem
+
+%%% 55
+\bibitem[\protect\citeauthoryear{Liu et~al.}{2023}]{liu2023adversarial}
+\begin{bchapter}
+\bauthor{\bsnm{Liu}, \binits{M.}},
+\bauthor{\bsnm{Yang}, \binits{H.}},
+\bauthor{\bsnm{Khailany}, \binits{B.}},
+\bauthor{\bsnm{Ren}, \binits{H.}}:
+\bctitle{An adversarial active sampling-based data augmentation framework for ai-assisted lithography modeling}.
+In: \bbtitle{2023 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},
+pp. \bfpage{1}--\blpage{9}
+(\byear{2023}).
+\bcomment{IEEE}
+\end{bchapter}
+\endbibitem
+
+%%% 56
+\bibitem[\protect\citeauthoryear{Tanabe and Takahashi}{2022}]{Tanabe2022}
+\begin{botherref}
+\oauthor{\bsnm{Tanabe}, \binits{H.}},
+\oauthor{\bsnm{Takahashi}, \binits{A.}}:
+Data augmentation in extreme ultraviolet lithography simulation using convolutional neural network.
+Journal of Micro/Nanopatterning, Materials, and Metrology
+\textbf{21}(4)
+(2022)
+\doiurl{10.1117/1.jmm.21.4.041602}
+\end{botherref}
+\endbibitem
+
+%%% 57
+\bibitem[\protect\citeauthoryear{Zhang et~al.}{2025}]{zhang2025synthesis}
+\begin{botherref}
+\oauthor{\bsnm{Zhang}, \binits{S.}},
+\oauthor{\bsnm{Kim}, \binits{S.}},
+\oauthor{\bsnm{Shin}, \binits{Y.}}:
+Synthesis of critical patterns for lithography optimizations through machine learning.
+IEEE Transactions on Semiconductor Manufacturing
+(2025)
+\end{botherref}
+\endbibitem
+
+%%% 58
+\bibitem[\protect\citeauthoryear{Shi et~al.}{2022}]{Shi2022Hologram}
+\begin{botherref}
+\oauthor{\bsnm{Shi}, \binits{L.}},
+\oauthor{\bsnm{Li}, \binits{B.}},
+\oauthor{\bsnm{Matusik}, \binits{W.}}:
+End-to-end learning of 3d phase-only holograms for holographic display.
+Light: Science and Applications
+\textbf{11}
+(2022)
+\doiurl{10.1038/s41377-022-00894-6}
+\end{botherref}
+\endbibitem
+
+%%% 59
+\bibitem[\protect\citeauthoryear{Zheng et~al.}{2023}]{zheng2023lithobench}
+\begin{barticle}
+\bauthor{\bsnm{Zheng}, \binits{S.}},
+\bauthor{\bsnm{Yang}, \binits{H.}},
+\bauthor{\bsnm{Zhu}, \binits{B.}},
+\bauthor{\bsnm{Yu}, \binits{B.}},
+\bauthor{\bsnm{Wong}, \binits{M.}}:
+\batitle{Lithobench: Benchmarking ai computational lithography for semiconductor manufacturing}.
+\bjtitle{Advances in Neural Information Processing Systems}
+\bvolume{36},
+\bfpage{30243}--\blpage{30254}
+(\byear{2023})
+\end{barticle}
+\endbibitem
+
+%%% 60
+\bibitem[\protect\citeauthoryear{Chen et~al.}{2024}]{chen2024open}
+\begin{bchapter}
+\bauthor{\bsnm{Chen}, \binits{G.}},
+\bauthor{\bsnm{Geng}, \binits{H.}},
+\bauthor{\bsnm{Yu}, \binits{B.}},
+\bauthor{\bsnm{Pan}, \binits{D.Z.}}:
+\bctitle{Open-source differentiable lithography imaging framework}.
+In: \bbtitle{DTCO and Computational Patterning III},
+vol. \bseriesno{12954},
+pp. \bfpage{133}--\blpage{142}
+(\byear{2024}).
+\bcomment{SPIE}
+\end{bchapter}
+\endbibitem
+
+%%% 61
+\bibitem[\protect\citeauthoryear{Shi et~al.}{2020}]{shi2020ai}
+\begin{bchapter}
+\bauthor{\bsnm{Shi}, \binits{X.}},
+\bauthor{\bsnm{Zhao}, \binits{Y.}},
+\bauthor{\bsnm{Chen}, \binits{S.}},
+\bauthor{\bsnm{Li}, \binits{C.}}:
+\bctitle{Ai computational lithography}.
+In: \bbtitle{2020 China Semiconductor Technology International Conference (CSTIC)},
+pp. \bfpage{1}--\blpage{4}
+(\byear{2020}).
+\bcomment{IEEE}
+\end{bchapter}
+\endbibitem
+
+%%% 62
+\bibitem[\protect\citeauthoryear{Liu}{2020}]{liu2020mask}
+\begin{bchapter}
+\bauthor{\bsnm{Liu}, \binits{P.}}:
+\bctitle{Mask synthesis using machine learning software and hardware platforms}.
+In: \bbtitle{Optical Microlithography XXXIII},
+vol. \bseriesno{11327},
+pp. \bfpage{30}--\blpage{45}
+(\byear{2020}).
+\bcomment{SPIE}
+\end{bchapter}
+\endbibitem
+
+%%% 63
+\bibitem[\protect\citeauthoryear{Chen et~al.}{2019}]{PhoneBit2019}
+\begin{botherref}
+\oauthor{\bsnm{Chen}, \binits{G.}},
+\oauthor{\bsnm{He}, \binits{S.}},
+\oauthor{\bsnm{Meng}, \binits{H.}},
+\oauthor{\bsnm{Huang}, \binits{K.}}:
+Phonebit: Efficient gpu-accelerated binary neural network inference engine for mobile phones.
+2020 Design, Automation \& Test in Europe Conference \& Exhibition (DATE),
+786--791
+(2019)
+\end{botherref}
+\endbibitem
+
+%%% 64
+\bibitem[\protect\citeauthoryear{Wang et~al.}{2022}]{HugeCTR2022}
+\begin{bchapter}
+\bauthor{\bsnm{Wang}, \binits{Z.}},
+\bauthor{\bsnm{Wei}, \binits{Y.}},
+\bauthor{\bsnm{Lee}, \binits{M.}},
+\bauthor{\bsnm{Langer}, \binits{M.}},
+\bauthor{\bsnm{Yu}, \binits{F.}},
+\bauthor{\bsnm{Liu}, \binits{J.}},
+\bauthor{\bsnm{Liu}, \binits{S.}},
+\bauthor{\bsnm{Abel}, \binits{D.}},
+\bauthor{\bsnm{Guo}, \binits{X.}},
+\bauthor{\bsnm{Dong}, \binits{J.}},
+\bauthor{\bsnm{Shi}, \binits{J.}},
+\bauthor{\bsnm{Li}, \binits{K.}}:
+\bctitle{Merlin hugectr: Gpu-accelerated recommender system training and inference},
+pp. \bfpage{534}--\blpage{537}
+(\byear{2022}).
+\doiurl{10.1145/3523227.3547405}
+\end{bchapter}
+\endbibitem
+
+%%% 65
+\bibitem[\protect\citeauthoryear{Lin et~al.}{2024}]{Lin2024SplitLearning}
+\begin{barticle}
+\bauthor{\bsnm{Lin}, \binits{Z.}},
+\bauthor{\bsnm{Zhu}, \binits{G.}},
+\bauthor{\bsnm{Deng}, \binits{Y.}},
+\bauthor{\bsnm{Chen}, \binits{X.}},
+\bauthor{\bsnm{Gao}, \binits{Y.}},
+\bauthor{\bsnm{Huang}, \binits{K.}},
+\bauthor{\bsnm{Fang}, \binits{Y.}}:
+\batitle{Efficient parallel split learning over resource-constrained wireless edge networks}.
+\bjtitle{IEEE Transactions on Mobile Computing}
+\bvolume{23}(\bissue{10}),
+\bfpage{9224}--\blpage{9239}
+(\byear{2024})
+\doiurl{10.1109/TMC.2024.3359040}
+\end{barticle}
+\endbibitem
+
+\end{thebibliography}

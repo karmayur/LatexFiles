@@ -1,0 +1,915 @@
+@article{Sakane2022,
+author = {Sakane, Shinji and Takaki, Tomohiro and Aoki, Takayuki},
+year = {2022},
+month = {01},
+pages = {},
+title = {Parallel-GPU-accelerated adaptive mesh refinement for three-dimensional phase-field simulation of dendritic growth during solidification of binary alloy},
+volume = {6},
+journal = {Materials Theory},
+doi = {10.1186/s41313-021-00033-5}
+}
+
+
+@article{Gruzinskis2008,
+author = {Shiktorov, P. and Starikov, E. and Gruzinskis, V. and Reggiani, Lino and Varani, Luca and Vaissiere, Jacqueline and Perez, Susana},
+year = {2003},
+month = {01},
+pages = {},
+title = {Monte Carlo Simulation of Electronic Noise in Semiconductor Materials and Devices Operating under Cyclostationary Conditions: Special Issue on the Proceedings of the INTERNATIONAL WORKSHOP ON COMPUTATIONAL ELECTRONICS (IWCE-9)}
+}
+
+
+@article{Lin2024SplitLearning,
+author = {Lin, Zheng and Zhu, Guangyu and Deng, Yiqin and Chen, Xianhao and Gao, Yue and Huang, Kaibin and Fang, Yuguang},
+title = {Efficient Parallel Split Learning Over Resource-Constrained Wireless Edge Networks},
+year = {2024},
+issue_date = {Oct. 2024},
+publisher = {IEEE Educational Activities Department},
+address = {USA},
+volume = {23},
+number = {10},
+issn = {1536-1233},
+url = {https://doi.org/10.1109/TMC.2024.3359040},
+doi = {10.1109/TMC.2024.3359040},
+abstract = {The increasingly deeper neural networks hinder the democratization of privacy-enhancing distributed learning, such as federated learning (FL), to resource-constrained devices. To overcome this challenge, in this paper, we advocate the integration of edge computing paradigm and parallel split learning (PSL), allowing multiple edge devices to offload substantial training workloads to an edge server via layer-wise model split. By observing that existing PSL schemes incur excessive training latency and a large volume of data transmissions, we propose an innovative PSL framework, namely, efficient parallel split learning (EPSL), to accelerate model training. To be specific, EPSL parallelizes client-side model training and <italic>reduces the dimension of activations’ gradients</italic> for backpropagation (BP) via <italic>last-layer gradient aggregation</italic>, leading to a significant reduction in server-side training and communication latency. Moreover, by considering the heterogeneous channel conditions and computing capabilities at edge devices, we jointly optimize subchannel allocation, power control, and cut layer selection to minimize the per-round latency. Simulation results show that the proposed EPSL framework significantly decreases the training latency needed to achieve a target accuracy compared with the state-of-the-art benchmarks, and the tailored resource management and layer split strategy can considerably reduce latency than the counterpart without optimization.},
+journal = {IEEE Transactions on Mobile Computing},
+month = oct,
+pages = {9224–9239},
+numpages = {16}
+}
+
+@inproceedings{LEcuyer2015,
+author = {L’Ecuyer, Pierre},
+year = {2015},
+month = {12},
+pages = {31-44},
+title = {Random number generation with multiple streams for sequential and parallel computing},
+doi = {10.1109/WSC.2015.7408151}
+}
+
+@inproceedings{HugeCTR2022,
+author = {Wang, Zehuan and Wei, Yingcan and Lee, Minseok and Langer, Matthias and Yu, Fan and Liu, Jie and Liu, Shijie and Abel, Daniel and Guo, Xu and Dong, Jianbing and Shi, Ji and Li, Kunlun},
+year = {2022},
+month = {09},
+pages = {534-537},
+title = {Merlin HugeCTR: GPU-accelerated Recommender System Training and Inference},
+doi = {10.1145/3523227.3547405}
+}
+
+@article{PhoneBit2019,
+  title={PhoneBit: Efficient GPU-Accelerated Binary Neural Network Inference Engine for Mobile Phones},
+  author={Gang Chen and Shengyu He and Haitao Meng and Kai Huang},
+  journal={2020 Design, Automation \& Test in Europe Conference \& Exhibition (DATE)},
+  year={2019},
+  pages={786-791},
+  url={https://api.semanticscholar.org/CorpusID:208910550}
+}
+
+@article{Shi2022Hologram,
+author = {Shi, Liang and Li, Beichen and Matusik, Wojciech},
+year = {2022},
+month = {12},
+pages = {},
+title = {End-to-end learning of 3D phase-only holograms for holographic display},
+volume = {11},
+journal = {Light: Science and Applications},
+doi = {10.1038/s41377-022-00894-6}
+}
+
+@article{Yu2024,
+author = {Yu, Peng and Pan, David and Mack, Chris},
+year = {2006},
+month = {03},
+pages = {},
+title = {Fast lithography simulation under focus variations for OPC and layout optimizations},
+volume = {6156},
+journal = {Proceedings of SPIE - The International Society for Optical Engineering},
+doi = {10.1117/12.658110}
+}
+
+@misc{Chen2023MatrixCover,
+author = {Chen, Guojin and Yang, H.Y. and Yu, Bei},
+year = {2023},
+month = {03},
+pages = {},
+title = {GPU-accelerated Matrix Cover Algorithm for Multiple Patterning Layout Decomposition},
+doi = {10.48550/arXiv.2303.14335}
+}
+
+@article{Tanabe2022,
+	author = {Hiroyoshi Tanabe and Atsushi Takahashi},
+	title = {Data augmentation in extreme ultraviolet lithography simulation using convolutional neural network},
+	journal = {Journal of Micro/Nanopatterning, Materials, and Metrology},
+	year = {2022},
+	volume = {21},
+	number = {4},
+	month = {October},
+	doi = {10.1117/1.jmm.21.4.041602},
+	date = {2022-10-14},
+	url = {https://lens.org/015-930-542-700-163}
+}
+
+
+@article{Chen2023DevelSet,
+title = "DevelSet: Deep Neural Level Set for Instant Mask Optimization",
+abstract = "As one of the key techniques for resolution enhancement technologies (RETs), optical proximity correction (OPC) suffers from prohibitive computational costs as feature sizes continue to shrink. Inverse lithography techniques (ILTs) treat the mask optimization process as an inverse imaging problem, yielding high-quality curvilinear masks. However, ILT methods often fall short of printability and manufacturability due to their time-consuming procedures and excessive computational overhead. In this article, we propose DevelSet, a potent metal layer OPC engine that replaces discrete pixel-based masks with implicit level set-based representations. With a GPU-accelerated lithography simulator, DevelSet achieves end-to-end mask optimization using a neural network to provide quasi-optimized level set initialization and further evolution with a CUDA-based mask optimizer for fast convergence. The backbone of DevelSet-Net is a transformer-based multibranch neural network that offers a parameter selector to eliminate the need for manual parameter initialization. Experimental results demonstrate that the DevelSet framework outperforms state-of-the-art approaches in terms of printability while achieving fast runtime performance (around 1 s). We expect this enhanced level set technique, coupled with a CUDA/DNN accelerated joint optimization paradigm, to have a substantial impact on industrial mask optimization solutions.",
+keywords = "Design for manufacture, level set, machine learning algorithms",
+author = "Guojin Chen and Ziyang Yu and Hongduo Liu and Yuzhe Ma and Bei Yu",
+note = "Publisher Copyright: {\textcopyright} 1982-2012 IEEE.",
+year = "2023",
+month = dec,
+day = "1",
+doi = "10.1109/TCAD.2023.3286262",
+language = "English",
+volume = "42",
+pages = "5020--5033",
+journal = "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+issn = "0278-0070",
+publisher = "Institute of Electrical and Electronics Engineers Inc.",
+number = "12",
+}
+
+
+
+@misc{SynopsysSLitho,
+  author       = {{Synopsys, Inc.}},
+  title        = {{S-Litho} Computational Lithography Platform},
+  howpublished = {\url{https://www.synopsys.com/manufacturing/lithography/s-litho.html}},
+  year         = {2024},
+  note         = {Accessed: 2025-12-17}
+}
+
+@misc{paszke2019pytorch,
+  abstract = {Deep learning frameworks have often focused on either usability or speed, but
+not both. PyTorch is a machine learning library that shows that these two goals
+are in fact compatible: it provides an imperative and Pythonic programming
+style that supports code as a model, makes debugging easy and is consistent
+with other popular scientific computing libraries, while remaining efficient
+and supporting hardware accelerators such as GPUs.
+  In this paper, we detail the principles that drove the implementation of
+PyTorch and how they are reflected in its architecture. We emphasize that every
+aspect of PyTorch is a regular Python program under the full control of its
+user. We also explain how the careful and pragmatic implementation of the key
+components of its runtime enables them to work together to achieve compelling
+performance.
+  We demonstrate the efficiency of individual subsystems, as well as the
+overall speed of PyTorch on several common benchmarks.},
+  added-at = {2020-01-10T22:19:45.000+0100},
+  author = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and Köpf, Andreas and Yang, Edward and DeVito, Zach and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},
+  biburl = {https://www.bibsonomy.org/bibtex/2018e9538aaad774ee16f704b858a78dd/analyst},
+  description = {[1912.01703] PyTorch: An Imperative Style, High-Performance Deep Learning Library},
+  interhash = {a3caca5456f48ad236ed06df5cf0ecca},
+  intrahash = {018e9538aaad774ee16f704b858a78dd},
+  keywords = {2019 deep-learning facebook library pytorch},
+  note = {cite arxiv:1912.01703Comment: 12 pages, 3 figures, NeurIPS 2019},
+  timestamp = {2021-04-21T16:03:01.000+0200},
+  title = {PyTorch: An Imperative Style, High-Performance Deep Learning Library},
+  url = {http://arxiv.org/abs/1912.01703},
+  year = 2019
+}
+
+
+@article{Zhang2020,
+author = {Zhang, Xianqiang and Ma, Xu and Zhang, Shengen and Pan, Yihua and Arce, Gonzalo},
+year = {2020},
+month = {01},
+pages = {1-8},
+title = {Study of Inverse Lithography Approaches based on Deep Learning},
+volume = {3},
+journal = {Journal of Microelectronic Manufacturing},
+doi = {10.33079/jomm.20030301}
+}
+
+
+
+@INPROCEEDINGS{Socha66,
+       author = {{Socha}, Robert and {Shi}, Xuelong and {LeHoty}, David},
+        title = "{Simultaneous source mask optimization (SMO)}",
+    booktitle = {Photomask and Next-Generation Lithography Mask Technology XII},
+         year = 2005,
+       editor = {{Komuro}, Masanori},
+       series = {Society of Photo-Optical Instrumentation Engineers (SPIE) Conference Series},
+       volume = {5853},
+        month = jun,
+        pages = {180-193},
+          doi = {10.1117/12.617431},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2005SPIE.5853..180S},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{NEUREUTHER1992377,
+title = {Simulation of optical lithography and inspection},
+journal = {Microelectronic Engineering},
+volume = {17},
+number = {1},
+pages = {377-384},
+year = {1992},
+issn = {0167-9317},
+doi = {https://doi.org/10.1016/0167-9317(92)90077-5},
+url = {https://www.sciencedirect.com/science/article/pii/0167931792900775},
+author = {Andrew R. Neureuther},
+abstract = {Process modeling and simulation for lithography, pattern transfer and inspection are highlighted. Advances in models for lithographic materials, algorithms for 3-D dissolution and etching, massively-parallel approaches for electromagnetic scattering from topography, and common TCAD environments are described. These models, algorithms and environments form synergistic TCAD tools which are playing an important role in developing and sustaining process technology for IC fabrication.}
+}
+
+@inproceedings{Govindaraju08,
+author = {Govindaraju, Naga and Lloyd, Brandon and Dotsenko, Yuri and Smith, Burton and Manferdelli, John},
+year = {2008},
+month = {11},
+pages = {2},
+title = {High performance discrete Fourier transforms on graphics processors},
+journal = {2008 SC - International Conference for High Performance Computing, Networking, Storage and Analysis, SC 2008},
+doi = {10.1109/SC.2008.5213922}
+}
+
+
+
+
+@inproceedings{Wong2001ResolutionET,
+  title={Resolution enhancement techniques in optical lithography},
+  author={Alfred K. Wong},
+  year={2001},
+  url={https://api.semanticscholar.org/CorpusID:137202131}
+}
+
+@inproceedings{Mack2007FundamentalPO,
+  title={Fundamental principles of optical lithography : the science of microfabrication},
+  author={Chris A. Mack},
+  year={2007},
+  url={https://api.semanticscholar.org/CorpusID:136637173}
+}
+
+@article{Hopkins88,
+    author = {Hopkins, Harold Horace},
+    title = {On the diffraction theory of optical images},
+    journal = {Proceedings of the Royal Society of London. A. Mathematical and Physical Sciences},
+    volume = {217},
+    number = {1130},
+    pages = {408-432},
+    year = {1953},
+    month = {05},
+    abstract = {The theory of image formation is formulated in terms of the coherence function in the object plane, the diffraction distribution function of the image-forming system and a function describing the structure of the object. There results a four-fold integral involving these functions, and the complex conjugate functions of the latter two. This integral is evaluated in terms of the Fourier transforms of the coherence function, the diffraction distribution function and its complex conjugate. In fact, these transforms are respectively the distribution of intensity in an ‘effective source’, and the complex transmission of the optical system— they are the data initially known and are generally of simple form. A generalized ‘transmission factor’ is found which reduces to the known results in the simple cases of perfect coherence and complete incoherence. The procedure may be varied in a manner more suited to non-periodic objects. The theory is applied to study inter alia the influence of the method of illumination on the images of simple periodic structures and of an isolated line.},
+    issn = {0080-4630},
+    doi = {10.1098/rspa.1953.0071},
+    url = {https://doi.org/10.1098/rspa.1953.0071},
+    eprint = {https://royalsocietypublishing.org/rspa/article-pdf/217/1130/408/46374/rspa.1953.0071.pdf},
+}
+
+
+
+
+@article{Gallatin2005,
+author = {Gallatin, Gregg},
+year = {2005},
+month = {08},
+pages = {},
+title = {Resist blur and line edge roughness},
+volume = {14},
+journal = {Proc. SPIE}
+}
+
+@article{Nickolls08,
+author = {Nickolls, John and Buck, Ian and Garland, Michael and Skadron, Kevin},
+year = {2008},
+month = {03},
+pages = {40-53},
+title = {Scalable Parallel Programming with CUDA},
+volume = {6},
+journal = {Queue},
+doi = {10.1145/1401132.1401152}
+}
+
+@inproceedings{10.5555/1964238.1964240,
+author = {Shalf, John and Dosanjh, Sudip and Morrison, John},
+title = {Exascale computing technology challenges},
+year = {2010},
+isbn = {9783642193279},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+abstract = {High Performance Computing architectures are expected to change dramatically in the next decade as power and cooling constraints limit increases in microprocessor clock speeds. Consequently computer companies are dramatically increasing on-chip parallelism to improve performance. The traditional doubling of clock speeds every 18-24 months is being replaced by a doubling of cores or other parallelism mechanisms. During the next decade the amount of parallelism on a single microprocessor will rival the number of nodes in early massively parallel supercomputers that were built in the 1980s. Applications and algorithms will need to change and adapt as node architectures evolve. In particular, they will need to manage locality to achieve performance. A key element of the strategy as we move forward is the co-design of applications, architectures and programming environments. There is an unprecedented opportunity for application and algorithm developers to influence the direction of future architectures so that they meet DOE mission needs. This article will describe the technology challenges on the road to exascale, their underlying causes, and their effect on the future of HPC system design.},
+booktitle = {Proceedings of the 9th International Conference on High Performance Computing for Computational Science},
+pages = {1–25},
+numpages = {25},
+keywords = {exascale, codesign, HPC},
+location = {Berkeley, CA},
+series = {VECPAR'10}
+}
+
+
+@misc{yang2024gpuacceleratedinverselithographyhigh,
+      title={GPU-Accelerated Inverse Lithography Towards High Quality Curvy Mask Generation}, 
+      author={Haoyu Yang and Haoxing Ren},
+      year={2024},
+      eprint={2411.07311},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2411.07311}, 
+}
+
+@book{kirk10,
+  abstract = {This work demonstrates the basic concepts of parallel programming and GPU architecture. It explores various techniques for constructing parallel programs in detail and features case studies to illuminate the development process.},
+  added-at = {2016-02-09T14:54:02.000+0100},
+  address = {Burlington, MA},
+  author = {Kirk, David B. and Hwu, Wen-mei W.},
+  biburl = {https://www.bibsonomy.org/bibtex/2332015ba835982ebfd0ee5d7e48eeda7/ytyoun},
+  interhash = {8a08e44bea8bf41187fca27edd57fd97},
+  intrahash = {332015ba835982ebfd0ee5d7e48eeda7},
+  isbn = {9780123814722 0123814723},
+  keywords = {parallel programming textbook},
+  publisher = {Morgan Kaufmann Publishers},
+  refid = {489718737},
+  series = {Applications of GPU Computing Series},
+  timestamp = {2016-02-09T14:58:00.000+0100},
+  title = {Programming Massively Parallel Processors: A Hands-on Approach},
+  year = 2010
+}
+
+
+@ARTICLE{4490127,
+  author={Owens, John D. and Houston, Mike and Luebke, David and Green, Simon and Stone, John E. and Phillips, James C.},
+  journal={Proceedings of the IEEE}, 
+  title={GPU Computing}, 
+  year={2008},
+  volume={96},
+  number={5},
+  pages={879-899},
+  keywords={Graphics;Central Processing Unit;Physics computing;Engines;Arithmetic;Bandwidth;Microprocessors;Hardware;Computational biophysics;Performance gain;General-purpose computing on the graphics processing unit (GPGPU);GPU computing;parallel computing},
+  doi={10.1109/JPROC.2008.917757}}
+
+@article{ZHANG2015176,
+title = {Accelerating aerial image simulation using improved CPU/GPU collaborative computing},
+journal = {Computers and Electrical Engineering},
+volume = {46},
+pages = {176-189},
+year = {2015},
+issn = {0045-7906},
+doi = {https://doi.org/10.1016/j.compeleceng.2015.05.018},
+url = {https://www.sciencedirect.com/science/article/pii/S0045790615002049},
+author = {Fan Zhang and Chen Hu and Pei-Ci Wu and Hongbo Zhang and Martin D.F. Wong},
+keywords = {Lithography simulation, Collaborative computing, Dynamic task scheduling, Advanced vector extensions, GPU parallel},
+
+}
+
+@ARTICLE{2017JMM&M,
+       author = {{De Bisschop}, Peter},
+        title = "{Stochastic effects in EUV lithography: random, local CD variability, and printing failures}",
+      journal = {Journal of Micro/Nanolithography, MEMS, and MOEMS},
+         year = 2017,
+        month = oct,
+       volume = {16},
+          eid = {041013},
+        pages = {041013},
+          doi = {10.1117/1.JMM.16.4.041013},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2017JMM&M..16d1013D},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+
+@article{Ma19,
+author = {Xu Ma and Zhiqiang Wang and Jianchen Zhu and Shengen Zhang and Gonzalo R. Arce and Shengjie Zhao},
+journal = {Opt. Express},
+keywords = {Computational imaging; Image metrics; Inverse design; Lithography; Optical limiting; Photolithography},
+number = {21},
+pages = {29992--30008},
+publisher = {Optica Publishing Group},
+title = {Nonlinear compressive inverse lithography aided by low-rank regularization},
+volume = {27},
+month = {Oct},
+year = {2019},
+url = {https://opg.optica.org/oe/abstract.cfm?URI=oe-27-21-29992},
+doi = {10.1364/OE.27.029992},
+abstract = {Photolithography is at the core of the semiconductor industry that is used to fabricate microscale and nanoscale integrated circuits. Inverse lithography is a technique extensively used to compensate for lithography patterning distortions. It refers to methods that pre-distort the photomask patterns such that their projection, through the photolithography system, results in a pattern that is as close as possible to the intended original. However, most inverse lithography technique (ILT) methods suffer from large computational complexity. This paper develops a nonlinear compressive sensing framework for ILT that effectively improves the computational efficiency and image fidelity, while at the same time controlling the mask complexity. Based on a nonlinear lithography imaging model, the compressive ILT is formulated as an inverse optimization problem aimed at reducing the patterning error, and enforcing the sparsity and low rank properties of the mask pattern. A downsampling strategy is adopted to reduce the dimensionality of the cost function, thus alleviating the computational burden. Sparsity and low-rank regularizations are then used to constrain the solution space and reduce the mask complexity. The split Bregman algorithm is used to solve for the inverse optimization problem. The superiority of the proposed method is verified by a set of simulations and comparison to traditional ILT algorithms.},
+}
+
+@ARTICLE{1953RSPSA,
+       author = {{Hopkins}, H.~H.},
+        title = "{On the Diffraction Theory of Optical Images}",
+      journal = {Proceedings of the Royal Society of London Series A},
+         year = 1953,
+        month = may,
+       volume = {217},
+       number = {1130},
+        pages = {408-432},
+          doi = {10.1098/rspa.1953.0071},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/1953RSPSA.217..408H},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+@article{Yu2023,
+  author  = {Yu, Ziyang and Chen, Guojin and Ma, Yuzhe and Yu, Bei},
+  title   = {A GPU-Enabled Level-Set Method for Mask Optimization},
+  journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+  year    = {2023},
+  volume  = {42},
+  number  = {2},
+  pages   = {594--605},
+  doi     = {10.1109/TCAD.2022.3175939},
+}
+
+@inproceedings{Pang2019,
+  author = {Linyong Pang and Mariusz Niewczas and Mike Meyer and Ryan Pearman and Abhishek Shendre and Aki Fujimura},
+  title = {{How GPU-accelerated simulation enables applied deep learning for masks and wafers}},
+  volume = {11178},
+  booktitle = {Photomask Japan 2019: XXVI Symposium on Photomask and Next-Generation Lithography Mask Technology},
+  editor = {Akihiko Ando},
+  organization = {International Society for Optics and Photonics},
+  publisher = {SPIE},
+  pages = {111780A},
+  keywords = {Deep Learning, DL, Artificial Intelligence, AI, simulation, photomask, GPU},
+  year = {2019},
+  doi = {10.1117/12.2538244},
+  URL = {https://doi.org/10.1117/12.2538244}
+}
+
+@inproceedings{Yang2025, 
+  author = {Yang, Haoyu and Ren, Haoxing}, 
+  title = {GPU-Accelerated Inverse Lithography Towards High Quality Curvy Mask Generation}, 
+  year = {2025}, 
+  isbn = {9798400712937}, 
+  publisher = {Association for Computing Machinery}, 
+  address = {New York, NY, USA}, 
+  url = {https://doi.org/10.1145/3698364.3705343}, 
+  doi = {10.1145/3698364.3705343}, 
+  abstract = {Inverse Lithography Technology (ILT) has emerged as a promising solution for photo mask design and optimization. Relying on multi-beam mask writers, ILT enables the creation of free-form curvilinear mask shapes that enhance printed wafer image quality and process window. However, a major challenge in implementing curvilinear ILT for large-scale production is mask rule checking, an area currently under development by foundries and EDA vendors. Although recent research has incorporated mask complexity into the optimization process, much of it focuses on reducing e-beam shots, which does not align with the goals of curvilinear ILT. In this paper, we introduce a GPU-accelerated ILT algorithm that improves not only contour quality and process window but also the precision of curvilinear mask shapes. Our experiments on open benchmarks demonstrate a significant advantage of our algorithm over leading academic ILT engines. Source code will be available at https://github.com/phdyang007/curvyILT.}, 
+  booktitle = {Proceedings of the 2025 International Symposium on Physical Design}, 
+  pages = {42–50}, 
+  numpages = {9}, 
+  keywords = {computational lithography, curvilinear mask, gpu-acceleration, opc}, location = {Austin, TX, USA}, series = {ISPD '25} 
+}
+
+@inproceedings{Hu2015,
+  title={Photolithography technology in electronic fabrication},
+  author={XiaoMing Hu},
+  year={2015/05},
+  booktitle={Proceedings of the 2015 International Power, Electronics and Materials Engineering Conference},
+  pages={843-850},
+  issn={2352-5401},
+  isbn={978-94-62520-73-8},
+  url={https://doi.org/10.2991/ipemec-15.2015.156},
+  doi={10.2991/ipemec-15.2015.156},
+  publisher={Atlantis Press}
+}
+
+@INPROCEEDINGS{Sun2023,
+  author={Sun, Shuyuan and Yang, Fan and Yu, Bei and Shang, Li and Zeng, Xuan},
+  booktitle={2023 60th ACM/IEEE Design Automation Conference (DAC)}, 
+  title={Efficient ILT via Multi-level Lithography Simulation}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-6},
+  keywords={Smoothing methods;Runtime;Design automation;Shape;Lithography;Benchmark testing;Computational complexity},
+  doi={10.1109/DAC56929.2023.10247704}
+}
+
+@article{aggarwal2023evolution,
+  title={Evolution of maskless digital lithography: game changer for advanced semiconductor packaging},
+  author={Aggarwal, Ashwini K},
+  journal={MR International Journal of Engineering and Technology},
+  volume={10},
+  number={2},
+  year={2023}
+}
+
+@INPROCEEDINGS{Zhu2024,
+  author={Zhu, Huming and Jiang, Xiangyu and Shu, Delong and Cheng, Xinyue and Hou, Biao and You, Hailong},
+  booktitle={2024 2nd International Symposium of Electronics Design Automation (ISEDA)}, 
+  title={A Review of DNN and GPU in Optical Proximity Correction}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={703-709},
+  keywords={Accuracy;Optical design;Lithography;Graphics processing units;Artificial neural networks;Optical distortion;Optical imaging;Optical Proximity Correction;Computational Lithography;Inverse Lithography Technology;Deep Neural Networks;Graphics Processing Unit},
+  doi={10.1109/ISEDA62518.2024.10617556}
+  }
+
+@INPROCEEDINGS{Zheng2023,
+  author={Zheng, Su and Yu, Bei and Wong, Martin},
+  booktitle={2023 IEEE 15th International Conference on ASIC (ASICON)}, 
+  title={OpenILT: An Open Source Inverse Lithography Technique Framework (Invited Paper)}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-4},
+  abstract={Semiconductor lithography is a key process for fabricating integrated circuits, but it suffers from various distortions and variations that affect the quality of the printed patterns. Optical proximity correction (OPC) is a technique to improve pattern fidelity and robustness, and inverse lithography technique (ILT) is a promising OPC method that optimizes the mask as an inverse problem of the imaging system. However, ILT is computationally expensive and challenging to implement at a full-chip scale. In this paper, we present OpenILT, an open-source ILT platform that supports the rapid development and evaluation of GPU-accelerated and AI-driven ILT methods. OpenILT provides a modular and flexible framework that integrates various ILT components, such as lithography simulation, objective functions, and evaluation metrics. It also offers a convenient interface to PyTorch, a popular deep learning library, to enable the implementation of GPU-accelerated and AI-driven ILT methods.},
+  keywords={Measurement;Lithography;Optical device fabrication;Optical distortion;Optical imaging;Libraries;Robustness},
+  doi={10.1109/ASICON58565.2023.10396314},
+  ISSN={2162-755X},
+  month={Oct},
+}
+
+
+@INPROCEEDINGS{Zheng2024,
+  author={Zheng, Su and Xiao, Gang and Yan, Ge and Dong, Meng and Li, Yao and Chen, Hong and Ma, Yuzhe and Yu, Bei and Wong, Martin},
+  booktitle={2024 2nd International Symposium of Electronics Design Automation (ISEDA)}, 
+  title={Model-based OPC Extension in OpenILT}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={568-573},
+  keywords={Semiconductor device modeling;Accuracy;Optical design;Scalability;Lithography;Layout;Optical imaging;Optical Proximity Correction;Computational Lithography;GPU Acceleration},
+  doi={10.1109/ISEDA62518.2024.10617951}
+}
+
+@online{Demmerle,
+  author = {Demmerle, Wolfgang},
+  title  = {GPU Acceleration Of Rigorous Lithography Simulations},
+  year   = 2025,
+  url    = {https://semiengineering.com/gpu-acceleration-of-rigorous-lithography-simulations/},
+  urldate= {2025-07-24}
+}
+
+@book{Lamport:LaTeX,
+  author    = {Leslie Lamport},
+  title     = {{\LaTeX}: A Document Preparation System},
+  year      = {1994},
+  publisher = {Addison-Wesley},
+  address   = {Reading, MA},
+  edition   = {2nd}
+}
+
+@book{XuMa1983,
+  author = { Xu Ma, Gonzalo R. Arce},
+  editor = {Wiley},
+  publisher = {Wiley},
+  title = {Computational Lithography},
+  year = {1983}
+}
+
+@ARTICLE{Lin2020,
+  author={Lin, Stephen and Hammood, Mustafa and Yun, Han and Luan, Enxiao and Jaeger, Nicolas A. F. and Chrostowski, Lukas},
+  journal={IEEE Journal of Selected Topics in Quantum Electronics}, 
+  title={Computational Lithography for Silicon Photonics Design}, 
+  year={2020},
+  volume={26},
+  number={2},
+  pages={1-8},
+  keywords={Lithography;Computational modeling;Optical device fabrication;Predictive models;Adaptive optics;Optimization;Proximity Effects;Optical Lithography;Deep Ultraviolet 193 nm;Lithography;Bragg Gratings;Optical Proximity Correction;Design-For-Manufacturability},
+  doi={10.1109/JSTQE.2019.2958931}
+}
+
+@inproceedings{negele2025,
+title={Acceleration potential in the {GPU} design-to-manufacturing pipeline},
+author={Maximilian Negele},
+booktitle={ICML Workshop on Technical AI Governance (TAIG)},
+year={2025},
+url={https://openreview.net/forum?id=lg1jX16PT8}
+}
+
+@inproceedings{Chen2008,
+author = {J. Fung Chen and Hua-Yu Liu and Thomas Laidig and Christian Zuniga and Yu Cao and Robert Socha},
+title = {{Development of a computational lithography roadmap}},
+volume = {6924},
+booktitle = {Optical Microlithography XXI},
+editor = {Harry J. Levinson and Mircea V. Dusa},
+organization = {International Society for Optics and Photonics},
+publisher = {SPIE},
+pages = {69241C},
+keywords = {computational lithography, computational lithography roadmap, OPC, RET, OPC models, Separable OPC models},
+year = {2008},
+doi = {10.1117/12.773060},
+URL = {https://doi.org/10.1117/12.773060}
+}
+
+@misc{Singh,
+  author = {{NVIDIA}},
+  title  = {TSMC and NVIDIA Transform Semiconductor Manufacturing with cuLitho Computational Lithography},
+  year   = {2024},
+  note   = {NVIDIA Blog. Available at: \url{https://blogs.nvidia.com/blog/tsmc-culitho-computational-lithography/}. Accessed: 2025-12-18}
+}
+
+@ARTICLE{YuZiyang2023,
+  author={Yu, Ziyang and Chen, Guojin and Ma, Yuzhe and Yu, Bei},
+  journal={IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}, 
+  title={A GPU-Enabled Level-Set Method for Mask Optimization}, 
+  year={2023},
+  volume={42},
+  number={2},
+  pages={594-605},
+  keywords={Level set;Lithography;Optical imaging;Adaptive optics;Optical diffraction;Mathematical models;Integrated optics;Design for manufacturability (DFM);graphics processing unit (GPU);level set;mask optimization;optical proximity correction (OPC);process variation},
+  doi={10.1109/TCAD.2022.3175939}}
+
+@inproceedings{Choi2021,
+  author = {Yohan Choi and Aki Fujimura and Abhishek Shendre},
+  title = {{Curvilinear masks: an overview}},
+  volume = {11855},
+  booktitle = {Photomask Technology 2021},
+  editor = {Stephen P. Renwick},
+  organization = {International Society for Optics and Photonics},
+  publisher = {SPIE},
+  pages = {118550U},
+  keywords = {Photomask, GPU, Curvilinear ILT, Inverse Lithography Technology (ILT), Wafer process windows, Mask Wafer Co-Optimization (MWCO), Multi-beam Mask Writer, Mask Rule Check (MRC)},
+  year = {2021},
+  doi = {10.1117/12.2601916},
+  URL = {https://doi.org/10.1117/12.2601916}
+}
+
+@article{Cao2023,
+author = {Qingchen Cao and Peng Xu and Song Sun and Jianfang He and Juan Wei and Jiangliu Shi and Yayi Wei},
+title = {{Curvilinear mask optimization with refined generative adversarial nets}},
+volume = {22},
+journal = {Journal of Micro/Nanopatterning, Materials, and Metrology},
+number = {1},
+publisher = {SPIE},
+pages = {013201},
+keywords = {generative adversarial network, inverse lithography technology, curvilinear mask, generator, Gallium nitride, Optical proximity correction, Design, Lithography, Education and training, Model based design, Source mask optimization, Computational lithography, Computer simulations, Contour modeling},
+year = {2023},
+doi = {10.1117/1.JMM.22.1.013201},
+URL = {https://doi.org/10.1117/1.JMM.22.1.013201}
+}
+
+@article{Shandre2023,
+author = {Abhishek Shendre and Aki Fujimura},
+title = {{Leaping into the curvy world with GPU-accelerated O(p) computing}},
+volume = {23},
+journal = {Journal of Micro/Nanopatterning, Materials, and Metrology},
+number = {4},
+publisher = {SPIE},
+pages = {041505},
+keywords = {photomask, GPU, curvilinear masks, information theory, pixel-based computing, mask data preparation, mask process correction, mask verification, Semiconducting wafers, Computer aided design, Photomasks, Critical dimension metrology, Optical proximity correction, Information theory, Manufacturing, Lithography, Printing, Scanning electron microscopy},
+year = {2024},
+doi = {10.1117/1.JMM.23.4.041505},
+URL = {https://doi.org/10.1117/1.JMM.23.4.041505}
+}
+
+@inproceedings{Lan2018,
+author = {Song Lan and Jun Liu and Yumin Wang and Ke Zhao and Jiangwei Li},
+title = {{Deep learning assisted fast mask optimization}},
+volume = {10587},
+booktitle = {Optical Microlithography XXXI},
+editor = {Jongwook Kye},
+organization = {International Society for Optics and Photonics},
+publisher = {SPIE},
+pages = {105870H},
+keywords = {Deep learning, Deep neural network, ILT, GPU, Graphic Processor Unit, Process Window Enhancement, RET, mask topography model},
+year = {2018},
+doi = {10.1117/12.2297514},
+URL = {https://doi.org/10.1117/12.2297514}
+}
+
+@ARTICLE{Tseng2003,
+  author={Tseng, A.A. and Kuan Chen and Chen, C.D. and Ma, K.J.},
+  journal={IEEE Transactions on Electronics Packaging Manufacturing}, 
+  title={Electron beam lithography in nanoscale fabrication: recent development}, 
+  year={2003},
+  volume={26},
+  number={2},
+  pages={141-149},
+  keywords={Electron beams;Lithography;Fabrication;Resists;Nanoscale devices;Writing;Printing;Electronics industry;Optical refraction;Electron optics},
+  doi={10.1109/TEPM.2003.817714}}
+
+@article{CHANG2001117,
+title = {Multiple electron-beam lithography},
+journal = {Microelectronic Engineering},
+volume = {57-58},
+pages = {117-135},
+year = {2001},
+note = {Micro- and Nano-Engineering 2000},
+issn = {0167-9317},
+doi = {https://doi.org/10.1016/S0167-9317(01)00528-7},
+url = {https://www.sciencedirect.com/science/article/pii/S0167931701005287},
+author = {T.H.P. Chang and Marian Mankos and Kim Y. Lee and Larry P. Muray},
+keywords = {Lithography, Multiple electron beam, Microcolumn, Photocathode},
+abstract = {A number of multiple electron-beam approaches are currently under evaluation for sub-100-nm lithography. These approaches offer the potential of improving throughput for direct wafer writing and mask patterning and could have far reaching implications for the semiconductor industry. A brief review of important examples of these approaches are given with a discussion on throughput. The current status of two specific approaches, the microcolumn and the single column with a multiple electron-beam source (photocathode), are reported. In particular, a more detailed review of the recent advances in the microcolumn technology is presented.}
+}
+
+@ARTICLE{Gu2008,
+  author={Gu, Allan and Zakhor, Avideh},
+  journal={IEEE Transactions on Semiconductor Manufacturing}, 
+  title={Optical Proximity Correction With Linear Regression}, 
+  year={2008},
+  volume={21},
+  number={2},
+  pages={263-271},
+  keywords={Linear regression;Integrated circuit modeling;Photonic integrated circuits;Semiconductor device modeling;Pattern matching;Predictive models;Integrated circuit manufacture;Integrated optics;Lithography;Circuit simulation;Optical proximity correction (OPC);Hybrid OPC;model-based OPC;linear regression;rule-based OPC},
+  doi={10.1109/TSM.2008.2000283}}
+
+@article{ma2018fast,
+  title={Fast optical proximity correction method based on nonlinear compressive sensing},
+  author={Ma, Xu and Wang, Zhiqiang and Li, Yanqiu and Arce, Gonzalo R and Dong, Lisong and Garcia-Frias, Javier},
+  journal={Optics Express},
+  volume={26},
+  number={11},
+  pages={14479--14498},
+  year={2018},
+  publisher={Optical Society of America}
+}
+
+@inproceedings{capodieci2006optical,
+  title={From Optical Proximity Correction to Lithography-Driven Physical Design (1996-2006): 10 years of Resolution Enhancement Technology and the roadmap enablers for the next decade},
+  author={Capodieci, Luigi},
+  booktitle={Optical Microlithography XIX},
+  volume={6154},
+  pages={615401},
+  year={2006},
+  organization={SPIE}
+}
+
+@inproceedings{pang2006inverse,
+  title={Inverse lithography technology (ILT): What is the impact to the photomask industry?},
+  author={Pang, Linyong and Liu, Yong and Abrams, Dan},
+  booktitle={Photomask and Next-Generation Lithography Mask Technology XIII},
+  volume={6283},
+  pages={233--243},
+  year={2006},
+  organization={SPIE}
+}
+
+@article{cecil2022advances,
+  title={Advances in inverse lithography},
+  author={Cecil, Thomas and Peng, Danping and Abrams, Daniel and Osher, Stanley J and Yablonovitch, Eli},
+  journal={ACS Photonics},
+  volume={10},
+  number={4},
+  pages={910--918},
+  year={2022},
+  publisher={ACS Publications}
+}
+
+@article{chen2022label,
+  title={Label-free neural networks-based inverse lithography technology},
+  author={Chen, Jing-Tao and Zhao, Yuan-Yuan and Zhang, Yang and Zhu, Jian-Xin and Duan, Xuan-Ming},
+  journal={Optics Express},
+  volume={30},
+  number={25},
+  pages={45312--45326},
+  year={2022},
+  publisher={Optica Publishing Group}
+}
+
+@article{pang2021inverse,
+  title={Inverse lithography technology: 30 years from concept to practical, full-chip reality},
+  author={Pang, Linyong},
+  journal={Journal of Micro/Nanopatterning, Materials, and Metrology},
+  volume={20},
+  number={3},
+  pages={030901--030901},
+  year={2021},
+  publisher={Society of Photo-Optical Instrumentation Engineers}
+}
+
+@article{navarro2014survey,
+  title={A survey on parallel computing and its applications in data-parallel problems using GPU architectures},
+  author={Navarro, Cristobal A and Hitschfeld-Kahler, Nancy and Mateu, Luis},
+  journal={Communications in computational physics},
+  volume={15},
+  number={2},
+  pages={285--329},
+  year={2014},
+  publisher={Cambridge University Press}
+}
+
+@phdthesis{subramany2011gpu,
+  title={GPU based lithography simulation and OPC},
+  author={Subramany, Lokesh},
+  year={2011},
+  school={University of Massachusetts Amherst}
+}
+
+@inproceedings{torunoglu2010gpu,
+  title={A GPU-based full-chip inverse lithography solution for random patterns},
+  author={Torunoglu, Ilhami and Karakas, Ahmet and Elsen, Erich and Andrus, Curtis and Bremen, Brandon and Dimitrov, Boris and Ungar, Jeffrey},
+  booktitle={Design for Manufacturability through Design-Process Integration IV},
+  volume={7641},
+  pages={340--347},
+  year={2010},
+  organization={SPIE}
+}
+
+@inproceedings{baji2018evolution,
+  title={Evolution of the GPU Device widely used in AI and Massive Parallel Processing},
+  author={Baji, Toru},
+  booktitle={2018 IEEE 2nd Electron devices technology and manufacturing conference (EDTM)},
+  pages={7--9},
+  year={2018},
+  organization={IEEE}
+}
+
+@article{shamoun2021multi,
+  title={Multi-beam mask writer in EUV era: challenges and opportunities},
+  author={Shamoun, Bassam and Chandramouli, Mahesh and Liu, Bin and Juday, Reid K and Bucay, Igal and Sowers, Andrew T and Abboud, Frank E},
+  journal={Novel Patterning Technologies 2021},
+  volume={11610},
+  pages={64--82},
+  year={2021},
+  publisher={SPIE}
+}
+
+@article{yasuda2023recent,
+  title={Recent progress and future of electron multi-beam mask writer},
+  author={Yasuda, Jumpei and Nomura, Haruyuki and Matsumoto, Hiroshi and Nakayamada, Noriaki and Yamashita, Hiroshi},
+  journal={Japanese Journal of Applied Physics},
+  volume={62},
+  number={SG},
+  pages={SG0803},
+  year={2023},
+  publisher={IOP Publishing}
+}
+
+@inproceedings{levinson2018current,
+  title={Current challenges and opportunities for EUV lithography},
+  author={Levinson, Harry J and Brunner, Timothy A},
+  booktitle={International Conference on Extreme Ultraviolet Lithography 2018},
+  volume={10809},
+  pages={5--11},
+  year={2018},
+  organization={SPIE}
+}
+
+@article{zheng2023lithobench,
+  title={Lithobench: Benchmarking ai computational lithography for semiconductor manufacturing},
+  author={Zheng, Su and Yang, Haoyu and Zhu, Binwu and Yu, Bei and Wong, Martin},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  pages={30243--30254},
+  year={2023}
+}
+
+@inproceedings{shi2020ai,
+  title={AI computational lithography},
+  author={Shi, Xuelong and Zhao, Yuhang and Chen, Shoumian and Li, Chen},
+  booktitle={2020 China Semiconductor Technology International Conference (CSTIC)},
+  pages={1--4},
+  year={2020},
+  organization={IEEE}
+}
+
+@inproceedings{chen2024open,
+  title={Open-source differentiable lithography imaging framework},
+  author={Chen, Guojin and Geng, Hao and Yu, Bei and Pan, David Z},
+  booktitle={DTCO and Computational Patterning III},
+  volume={12954},
+  pages={133--142},
+  year={2024},
+  organization={SPIE}
+}
+
+@article{zhang2025synthesis,
+  title={Synthesis of Critical Patterns for Lithography Optimizations through Machine Learning},
+  author={Zhang, Shilong and Kim, Seohyun and Shin, Youngsoo},
+  journal={IEEE Transactions on Semiconductor Manufacturing},
+  year={2025},
+  publisher={IEEE}
+}
+
+ 
+
+@article{jiang2021neural,
+  title={Neural-ILT 2.0: Migrating ILT to domain-specific and multitask-enabled neural network},
+  author={Jiang, Bentian and Liu, Lixin and Ma, Yuzhe and Yu, Bei and Young, Evangeline FY},
+  journal={IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+  volume={41},
+  number={8},
+  pages={2671--2684},
+  year={2021},
+  publisher={IEEE}
+}
+
+@article{pang2021breakthrough,
+  title={Breakthrough curvilinear ILT enabled by multi-beam mask writing},
+  author={Pang, Linyong and Russell, Ezequiel Vidal and Baggenstoss, Bill and Lee, Michael and Digaum, Jennefir and Yang, Ming-Chuan and Ungar, P Jeffrey and Bouaricha, Ali and Wang, Kechang and Su, Bo and others},
+  journal={Journal of Micro/Nanopatterning, Materials, and Metrology},
+  volume={20},
+  number={4},
+  pages={041405--041405},
+  year={2021},
+  publisher={Society of Photo-Optical Instrumentation Engineers}
+}
+
+@inproceedings{smith2003methods,
+  title={Methods for benchmarking photolithography simulators},
+  author={Smith, Mark D and Mack, Chris A},
+  booktitle={Optical Microlithography XVI},
+  volume={5040},
+  pages={57--68},
+  year={2003},
+  organization={SPIE}
+}
+
+@phdthesis{chevallier2020physics,
+  title={Physics-based machine learning-aided method for optical mask generation in the Lithography Process},
+  author={Chevallier, Emilien},
+  year={2020},
+  school={Politecnico di Torino}
+}
+
+@inproceedings{liu2020mask,
+  title={Mask synthesis using machine learning software and hardware platforms},
+  author={Liu, Peng},
+  booktitle={Optical Microlithography XXXIII},
+  volume={11327},
+  pages={30--45},
+  year={2020},
+  organization={SPIE}
+}
+
+@inproceedings{liu2023adversarial,
+  title={An adversarial active sampling-based data augmentation framework for ai-assisted lithography modeling},
+  author={Liu, Mingjie and Yang, Haoyu and Khailany, Brucek and Ren, Haoxing},
+  booktitle={2023 IEEE/ACM International Conference on Computer Aided Design (ICCAD)},
+  pages={1--9},
+  year={2023},
+  organization={IEEE}
+}
+

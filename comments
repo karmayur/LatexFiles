@@ -1,0 +1,21 @@
+Review Comments: This manuscript provides a timely and well-motivated survey of GPU acceleration in computational lithography. 
+The topic is highly relevant to both the academic and industrial communities, and the authors succeed in framing computational lithography 
+from a system-level perspective rather than as isolated kernel optimizations. The proposed taxonomy and the emphasis on end-to-end GPU residency 
+are particularly valuable. However, in its current form, the manuscript requires substantial revision to meet the standards of a high-impact review article. 
+
+My main comments are as follows.
+Key performance and memory claims should be accompanied by clear descriptions of baselines, problem scales, precision settings, and 
+whether results reflect end-to-end workflows or isolated kernels.
+
+Placeholder-style references and indirect attributions should be replaced with explicit, traceable citations, and the literature review should focus more on 
+synthesis and comparison rather than sequential description.
+
+More concrete guidance on precision choices, determinism, and their impact on lithography metrics would significantly enhance the practical value of the review.
+
+A more balanced discussion of portability, alternative GPU ecosystems, and the implications of vendor dependence would strengthen the neutrality of the survey.
+
+An overview schematic summarizing the taxonomy, computational workflow, and GPU acceleration strategies would greatly improve clarity and help readers grasp the 
+overall structure of the review more efficiently.
+
+
+Typographical errors, inconsistent terminology, and occasional abrupt transitions should be corrected to improve readability and professionalism.
