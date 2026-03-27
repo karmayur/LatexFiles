@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{65}
+\begin{thebibliography}{67}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -845,6 +845,46 @@ GPU-accelerated Matrix Cover Algorithm for Multiple Patterning Layout Decomposit
 \endbibitem
 
 %%% 53
+\bibitem[\protect\citeauthoryear{Shendre et~al.}{2025}]{Shendre2025}
+\begin{bchapter}
+\bauthor{\bsnm{Shendre}, \binits{A.}},
+\bauthor{\bsnm{Shirali}, \binits{N.}},
+\bauthor{\bsnm{Fujimura}, \binits{A.}}:
+\bctitle{{Making curves manufacturable with O(p) computing: a sampling theory approach}}.
+In: \beditor{\bsnm{III}, \binits{L.S.M.}},
+\beditor{\bsnm{Philipsen}, \binits{V.}} (eds.)
+\bbtitle{Photomask Technology 2025},
+vol. \bseriesno{13687},
+p. \bfpage{136870}.
+\bpublisher{SPIE}, \blocation{???}
+(\byear{2025}).
+\doiurl{10.1117/12.3072119} .
+\bcomment{International Society for Optics and Photonics}.
+\burl{https://doi.org/10.1117/12.3072119}
+\end{bchapter}
+\endbibitem
+
+%%% 54
+\bibitem[\protect\citeauthoryear{Nakayamada et~al.}{2024}]{Nakayamada2024}
+\begin{barticle}
+\bauthor{\bsnm{Nakayamada}, \binits{N.}},
+\bauthor{\bsnm{Nomura}, \binits{H.}},
+\bauthor{\bsnm{Kato}, \binits{Y.}},
+\bauthor{\bsnm{Yasui}, \binits{K.}},
+\bauthor{\bsnm{Shendre}, \binits{A.}},
+\bauthor{\bsnm{Shirali}, \binits{N.}},
+\bauthor{\bsnm{Masuda}, \binits{Y.}},
+\bauthor{\bsnm{Fujimura}, \binits{A.}}:
+\batitle{{Curvilinear mask process correction embedded on multi-beam mask writer}}.
+\bjtitle{Journal of Micro/Nanopatterning, Materials, and Metrology}
+\bvolume{23}(\bissue{1}),
+\bfpage{011206}
+(\byear{2024})
+\doiurl{10.1117/1.JMM.23.1.011206}
+\end{barticle}
+\endbibitem
+
+%%% 55
 \bibitem[\protect\citeauthoryear{Levinson and Brunner}{2018}]{levinson2018current}
 \begin{bchapter}
 \bauthor{\bsnm{Levinson}, \binits{H.J.}},
@@ -858,7 +898,7 @@ pp. \bfpage{5}--\blpage{11}
 \end{bchapter}
 \endbibitem
 
-%%% 54
+%%% 56
 \bibitem[\protect\citeauthoryear{Negele}{2025}]{negele2025}
 \begin{bchapter}
 \bauthor{\bsnm{Negele}, \binits{M.}}:
@@ -869,7 +909,7 @@ In: \bbtitle{ICML Workshop on Technical AI Governance (TAIG)}
 \end{bchapter}
 \endbibitem
 
-%%% 55
+%%% 57
 \bibitem[\protect\citeauthoryear{Liu et~al.}{2023}]{liu2023adversarial}
 \begin{bchapter}
 \bauthor{\bsnm{Liu}, \binits{M.}},
@@ -884,7 +924,7 @@ pp. \bfpage{1}--\blpage{9}
 \end{bchapter}
 \endbibitem
 
-%%% 56
+%%% 58
 \bibitem[\protect\citeauthoryear{Tanabe and Takahashi}{2022}]{Tanabe2022}
 \begin{botherref}
 \oauthor{\bsnm{Tanabe}, \binits{H.}},
@@ -897,7 +937,7 @@ Journal of Micro/Nanopatterning, Materials, and Metrology
 \end{botherref}
 \endbibitem
 
-%%% 57
+%%% 59
 \bibitem[\protect\citeauthoryear{Zhang et~al.}{2025}]{zhang2025synthesis}
 \begin{botherref}
 \oauthor{\bsnm{Zhang}, \binits{S.}},
@@ -909,7 +949,7 @@ IEEE Transactions on Semiconductor Manufacturing
 \end{botherref}
 \endbibitem
 
-%%% 58
+%%% 60
 \bibitem[\protect\citeauthoryear{Shi et~al.}{2022}]{Shi2022Hologram}
 \begin{botherref}
 \oauthor{\bsnm{Shi}, \binits{L.}},
@@ -923,7 +963,7 @@ Light: Science and Applications
 \end{botherref}
 \endbibitem
 
-%%% 59
+%%% 61
 \bibitem[\protect\citeauthoryear{Zheng et~al.}{2023}]{zheng2023lithobench}
 \begin{barticle}
 \bauthor{\bsnm{Zheng}, \binits{S.}},
@@ -939,7 +979,7 @@ Light: Science and Applications
 \end{barticle}
 \endbibitem
 
-%%% 60
+%%% 62
 \bibitem[\protect\citeauthoryear{Chen et~al.}{2024}]{chen2024open}
 \begin{bchapter}
 \bauthor{\bsnm{Chen}, \binits{G.}},
@@ -955,7 +995,7 @@ pp. \bfpage{133}--\blpage{142}
 \end{bchapter}
 \endbibitem
 
-%%% 61
+%%% 63
 \bibitem[\protect\citeauthoryear{Shi et~al.}{2020}]{shi2020ai}
 \begin{bchapter}
 \bauthor{\bsnm{Shi}, \binits{X.}},
@@ -970,7 +1010,7 @@ pp. \bfpage{1}--\blpage{4}
 \end{bchapter}
 \endbibitem
 
-%%% 62
+%%% 64
 \bibitem[\protect\citeauthoryear{Liu}{2020}]{liu2020mask}
 \begin{bchapter}
 \bauthor{\bsnm{Liu}, \binits{P.}}:
@@ -983,7 +1023,7 @@ pp. \bfpage{30}--\blpage{45}
 \end{bchapter}
 \endbibitem
 
-%%% 63
+%%% 65
 \bibitem[\protect\citeauthoryear{Chen et~al.}{2019}]{PhoneBit2019}
 \begin{botherref}
 \oauthor{\bsnm{Chen}, \binits{G.}},
@@ -997,7 +1037,7 @@ Phonebit: Efficient gpu-accelerated binary neural network inference engine for m
 \end{botherref}
 \endbibitem
 
-%%% 64
+%%% 66
 \bibitem[\protect\citeauthoryear{Wang et~al.}{2022}]{HugeCTR2022}
 \begin{bchapter}
 \bauthor{\bsnm{Wang}, \binits{Z.}},
@@ -1019,7 +1059,7 @@ pp. \bfpage{534}--\blpage{537}
 \end{bchapter}
 \endbibitem
 
-%%% 65
+%%% 67
 \bibitem[\protect\citeauthoryear{Lin et~al.}{2024}]{Lin2024SplitLearning}
 \begin{barticle}
 \bauthor{\bsnm{Lin}, \binits{Z.}},
