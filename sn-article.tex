@@ -122,9 +122,18 @@ Roadmap
 
 \abstract
 {
-Computational lithography is a critical enabler of advanced semiconductor manufacturing, supporting mask correction, optical imaging, and resist process modeling at nanoscale technology nodes. As feature sizes shrink, workloads associated with optical proximity correction (OPC), inverse lithography technology (ILT), source–mask optimization (SMO), and stochastic resist simulation scale superlinearly, overwhelming traditional CPU-centric workflows. Recent advances in graphics processing units (GPUs) and heterogeneous cluster architectures have fundamentally transformed this landscape by offering massive parallelism, high memory bandwidth, and improved energy efficiency for lithography workloads dominated by FFT-based imaging, partial differential equation solvers, and iterative inverse optimization.
+Computational lithography remains the cornerstone of modern semiconductor manufacturing, yet it faces unprecedented scaling challenges as feature sizes shrink. Recent advancements in General-Purpose GPU (GPGPU) computing have transformed this landscape, enabling the transition from traditional CPU-based heuristics to massive, physics-based optimization. This paper provides a comprehensive survey of the GPU-accelerated computational lithography ecosystem. We first establish a multi-dimensional taxonomy covering application domains such as Inverse Lithography Technology (ILT) and EUV modeling alongside their underlying numerical algorithms. We then detail the GPU-resident computational workflow, illustrating how iterative optimization loops minimize host-device bottlenecks. Finally, we analyze specific GPU acceleration strategies, from SIMT parallelism and memory-aware tiling to emerging AI-physics hybrids. By synthesizing these elements, this review offers a roadmap for researchers to navigate the current state-of-the-art and identifies future trajectories in GPU-driven lithographic optimization.
+% Computational lithography is a critical enabler of advanced semiconductor manufacturing, supporting mask correction, optical imaging, and resist process modeling at nanoscale technology nodes. As feature sizes shrink, workloads associated with optical proximity correction (OPC), inverse lithography technology (ILT), source–mask optimization (SMO), and stochastic resist simulation scale superlinearly, overwhelming traditional CPU-centric workflows. Recent advances in graphics processing units (GPUs) and heterogeneous cluster architectures have fundamentally transformed this landscape by offering massive parallelism, high memory bandwidth, and improved energy efficiency for lithography workloads dominated by FFT-based imaging, partial differential equation solvers, and iterative inverse optimization.
 
-This survey presents a comprehensive taxonomy of GPU-accelerated computational lithography from a high-performance computing perspective. We categorize prior work across application domains, numerical methods, and system designs, including multi-GPU nodes and GPU clusters. Drawing on academic research and industrial platforms such as NVIDIA cuLitho, we analyze scalability trends, memory and communication bottlenecks, precision considerations, and reproducibility challenges. We further outline open challenges and a roadmap for scalable, energy-efficient lithography on modern GPU-accelerated clusters.    
+% This survey presents a comprehensive taxonomy of GPU-accelerated computational lithography from a high-performance computing perspective. We categorize prior work across application domains, numerical methods, and system designs, including multi-GPU nodes and GPU clusters. Drawing on academic research and industrial platforms such as NVIDIA cuLitho, we analyze scalability trends, memory and communication bottlenecks, precision considerations, and reproducibility challenges. We further outline open challenges and a roadmap for scalable, energy-efficient lithography on modern GPU-accelerated clusters.    
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.7\linewidth]{images/summary.png}
+  \caption{Pillars of GPU enabled Computational lithography}
+  \label{fig:Comptuational Lithography Pillars}
+\end{figure}
+
 }
 
 \keywords{GPU Computing, Computational Lithography, Heterogeneous Clusters, Inverse Lithography Technology (ILT), High-Performance Computing (HPC), Semiconductor Manufacturing}
@@ -502,13 +511,55 @@ Despite their high resolution, traditional e-beam approaches face throughput lim
 \subsubsection{Integration with Multi-Beam Mask Writers}
 Multi-beam mask writers (MBMWs) represent a critical enabling technology for translating curvilinear ILT designs into manufacturable photomasks. By employing thousands of parallel electron beams, MBMWs dramatically reduce mask writing time while maintaining the precision required for advanced nodes, particularly in EUV lithography. However, the adoption of curvilinear masks introduces substantial challenges related to data volume, throughput, and pattern fidelity.
 
-Shamoun et al. discussed the evolving requirements placed on multi-beam mask writers by EUV lithography, emphasizing the need to support higher resolution, improved critical dimension uniformity, reduced line-edge roughness, and zero writer-induced defects \cite{shamoun2021multi}. They also highlighted the growing challenge of managing the large data volumes associated with curvilinear ILT and the importance of close coordination between mask writers and computational lithography tools.
+Shamoun et al. discussed the evolving requirements placed on multi-beam mask writers by EUV lithography, emphasizing the need to support higher resolution, improved critical dimension uniformity, red uced line-edge roughness, and zero writer-induced defects \cite{shamoun2021multi}. They also highlighted the growing challenge of managing the large data volumes associated with curvilinear ILT and the importance of close coordination between mask writers and computational lithography tools.
 
 Yasuda et al. reviewed the development of NuFlare Technology’s multi-beam mask writing systems, describing architectural features such as high beam current density, pixel-level dose correction, and charging-effect mitigation designed for high-volume manufacturing of leading-edge masks \cite{yasuda2023recent}. These advances underscore the tight coupling between GPU-accelerated ILT, curvilinear data representations, and downstream mask writing infrastructure.\textcolor{blue}{NuFlare multibeam mask writers also use GPU accelerated Mask Process Correction (MPC) software called PLDC. Here GPU acceleration enables inline MPC for photomasks that adds zero turnaround time for MPC. \cite{Shendre2025} \cite{Nakayamada2024}}
 
 From a system perspective, effective integration between GPU-based lithography computation and multi-beam mask writers is essential for realizing the benefits of curvilinear ILT in production. Managing data growth, preserving pattern fidelity, and sustaining throughput across the toolchain require coordinated advances in algorithms, system architecture, and hardware. As such, MBMW integration represents a key convergence point where GPU-accelerated computation directly influences manufacturing feasibility.
+
+
+\textcolor{blue}{\subsection{Evaluation Methodology and Benchmarking standards}}
+\textcolor{blue}{
+To ensure a consistent and transparent analysis of the GPU acceleration claims presented in this survey, the following benchmarking criteria were applied across the reported academic and industrial results. These parameters distinguish between isolated kernel performance and end-to-end workflow efficiency.}
+
+\subsubsection{Baseline Configurations}
+Performance speedups (X) are measured against optimized, multi-threaded CPU baselines typical of production-scale Electronic Design Automation (EDA) environments.
+
+\begin{itemize}
+  \item \textbf{CPU Baselines}: Standard benchmarks utilize high-performance x86 clusters. For instance, the NVIDIA cuLitho results compare a GPU-accelerated node against a traditional CPU-centric workflow, where 350+ GPUs achieve the throughput equivalent of approximately 40,000 CPU cores (14, 30).
+  \item \textbf{Hardware Generations}: Academic results (e.g., OpenILT) primarily utilize data-center grade GPUs (NVIDIA A100/H100) to evaluate scalability (4, 13).
+ \end{itemize}
+
+ \subsubsection{Problem Scales and Resolution}
+
+ Computational intensity in this survey is categorized by layout complexity and grid resolution:
+ \begin{itemize}
+  \item \textbf{Full Chip Scale}: Reflects production-level layouts exceeding several square centimeters, requiring distributed execution across GPU clusters (14, 21).
+  \item \textbf{Grid Density}: High-resolution pixel-based ILT (e.g., MultiILT) utilizes dense simulation grids to maintain pattern fidelity, often requiring over 7 GB of VRAM per instance (30).
+  \item \textbf{Optimization Depth}: Inverse problems (ILT and SMO) are evaluated over "thousands of iterations" of forward-inverse loops, providing a measure of sustained throughput rather than peak burst performance (2, 10).
+ \end{itemize}
+
+ \subsubsection{Precision and Numerical Fidelity}
+
+ Numerical precision is a critical factor in balancing throughput and lithographic quality:
+ \begin{itemize}
+  \item \textbf{Standard Precision}: Unless otherwise noted, FFT-based imaging and PDE solvers utilize single-precision (FP32), which is the industry standard for maintaining edge placement error (EPE) accuracy while maximizing GPU arithmetic intensity (4, 20).
+  \item \textbf{AI assisted precision}: Hybrid workflows incorporating neural surrogates often leverage mixed-precision (FP16/BF16) for inference stages to achieve the reported 2
+  performance boost without sacrificing final mask manufacturability (29, 30).
+ \end{itemize}
+
+ \subsubsection{Workflow Scope: Isolated vs. End to End}
+
+ We distinguish between two primary execution models to clarify the source of speedup:
+ \begin{itemize}
+  \item \textbf{Isolated Kernels}: Early and transitional commercial tools (e.g., S-Litho) often reflect "kernel-only" acceleration of FFT-based imaging or specific resist calculations, where performance is frequently limited by host-device data transfer overhead (11, 40).
+  \item \textbf{End to End (GPU-Resident)}: Modern GPU-first platforms (e.g., cuLitho, OpenILT) report "end-to-end" metrics. In these models, the entire optimization loop—including optical simulation, resist modeling, and gradient evaluation—remains device-resident to eliminate communication bottlenecks (4, 14, 23).
+ \end{itemize}
+
   
 \subsection{Performance Benchmarks and System-Level Impact}
+
+
 Quantifying the performance impact of GPU acceleration in computational lithography is challenging due to differences in workload characteristics, process assumptions, hardware configurations, and optimization objectives across studies. Rather than presenting a unified benchmarking methodology, this section summarizes representative performance results reported in academic and industrial literature, with the goal of illustrating broad system-level trends rather than absolute performance rankings.
 
 Early analytical work emphasized the importance of balancing simulation accuracy and computational cost, providing closed-form methods to estimate error bounds and convergence behavior for lithography simulation techniques \cite{smith2003methods}. These analyses remain relevant in the GPU era, as acceleration enables more accurate models to be evaluated within practical time constraints rather than simply speeding up existing approximations.
@@ -640,7 +691,32 @@ From a systems perspective, AI-driven lithography benefits directly from advance
 
 Despite their promise, significant challenges remain. Dataset generation remains costly, interpretability of learned models is limited, and compliance with foundry design rules and verification flows is not guaranteed. Addressing these issues—while ensuring tight integration between AI models and GPU-resident physics solvers—constitutes a central component of the research roadmap for next-generation computational lithography.
 
-\subsection{Roadmap and Outlook}
+
+\section{Roadmap and Outlook}
+
+\subsection{Vendor Dependence and CUDA dominance}
+While the paper correctly identifies CUDA as the industry standard due to its mature compiler support and highly optimized libraries (like those used in NVIDIA cuLitho), it highlights a significant risk of vendor lock-in (1.13, 1.22).
+\begin{itemize}
+  \item The Trade-off: The high performance reported (up to 40-60x) is often tied to hardware-specific features that make migrating to other GPU vendors difficult without substantial code rewrites (1.22, 1.30).
+  \item Implication: Foundries and EDA providers become dependent on a single hardware roadmap, which can impact long-term procurement strategies and cost controls (1.32).
+
+\end{itemize}
+
+\subsection{Alternative GPU Ecosystems and Portability}
+The discussion on OpenCL can be strengthened by framing it not just as a "weaker" alternative, but as a necessary standard for cross-platform portability (1.13).
+\begin{itemize}
+  \item  OpenCL vs. CUDA: While OpenCL allows code to run across NVIDIA, AMD, and Intel GPUs, it currently lacks the vendor-optimized, lithography-specific libraries (such as FFT and linear algebra) that drive the performance of platforms like cuLitho (1.13).
+  \item Emerging Standards: You could mention the potential role of SYCL or HIP as middle-ground solutions that aim to offer performance similar to CUDA while maintaining a path to multi-vendor hardware support.
+\end{itemize}
+
+\subsection{Implications for System Architecture}
+The move toward full-pipeline GPU residency (where everything from optical simulation to inverse optimization stays on the device) further complicates portability (1.3, 1.30, 1.33).
+\begin{itemize}
+  \item Hardware Sensitivity: Because these end-to-end models are designed to minimize host-device data movement, they are often finely tuned to the specific memory hierarchy and interconnect speeds (e.g., NVLink) of a particular vendor's architecture (1.13, 1.33).
+  \item The "Portability Tax": Achieving true neutrality often requires adopting higher-level abstractions that may introduce the very data movement bottlenecks the paper argues against (1.14).
+  
+\end{itemize}
+
 Looking forward, the evolution of computational lithography will be shaped by the convergence of three forces: increasing physical complexity at advanced nodes, rapid advances in GPU and accelerator architectures, and growing integration of AI into simulation and optimization workflows. Addressing open challenges will require holistic system-level design that unifies physics-based modeling, learning-based surrogates, memory-efficient execution, and scalable cluster architectures. Key directions on the research roadmap include:
 \begin{itemize}
 	\item GPU-first and cluster-native lithography pipelines capable of sustaining full-chip ILT and stochastic EUV modeling.
