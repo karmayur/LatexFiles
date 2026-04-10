@@ -108,7 +108,7 @@ Roadmap
 
 \author*[1]{\fnm{Shadi} \sur{Alawneh}}\email{shadialawneh@oakland.edu}
 
-\author[1]{\fnm{Mayuesh} \sur{Karandikar}}\email{mvkarandikar@oakland.edu}
+\author[1]{\fnm{Mayuresh} \sur{Karandikar}}\email{mvkarandikar@oakland.edu}
 \equalcont{These authors contributed equally to this work.}
 
 
@@ -123,13 +123,16 @@ Roadmap
 \abstract
 {
 Computational lithography remains the cornerstone of modern semiconductor manufacturing, yet it faces unprecedented scaling challenges as feature sizes shrink. Recent advancements in General-Purpose GPU (GPGPU) computing have transformed this landscape, enabling the transition from traditional CPU-based heuristics to massive, physics-based optimization. This paper provides a comprehensive survey of the GPU-accelerated computational lithography ecosystem. We first establish a multi-dimensional taxonomy covering application domains such as Inverse Lithography Technology (ILT) and EUV modeling alongside their underlying numerical algorithms. We then detail the GPU-resident computational workflow, illustrating how iterative optimization loops minimize host-device bottlenecks. Finally, we analyze specific GPU acceleration strategies, from SIMT parallelism and memory-aware tiling to emerging AI-physics hybrids. By synthesizing these elements, this review offers a roadmap for researchers to navigate the current state-of-the-art and identifies future trajectories in GPU-driven lithographic optimization.
+
+
+
 % Computational lithography is a critical enabler of advanced semiconductor manufacturing, supporting mask correction, optical imaging, and resist process modeling at nanoscale technology nodes. As feature sizes shrink, workloads associated with optical proximity correction (OPC), inverse lithography technology (ILT), source–mask optimization (SMO), and stochastic resist simulation scale superlinearly, overwhelming traditional CPU-centric workflows. Recent advances in graphics processing units (GPUs) and heterogeneous cluster architectures have fundamentally transformed this landscape by offering massive parallelism, high memory bandwidth, and improved energy efficiency for lithography workloads dominated by FFT-based imaging, partial differential equation solvers, and iterative inverse optimization.
 
 % This survey presents a comprehensive taxonomy of GPU-accelerated computational lithography from a high-performance computing perspective. We categorize prior work across application domains, numerical methods, and system designs, including multi-GPU nodes and GPU clusters. Drawing on academic research and industrial platforms such as NVIDIA cuLitho, we analyze scalability trends, memory and communication bottlenecks, precision considerations, and reproducibility challenges. We further outline open challenges and a roadmap for scalable, energy-efficient lithography on modern GPU-accelerated clusters.    
 
 \begin{figure}[t]
   \centering
-  \includegraphics[width=0.7\linewidth]{images/summary.png}
+  \includegraphics[width=1.0\linewidth]{images/summary.png}
   \caption{Pillars of GPU enabled Computational lithography}
   \label{fig:Comptuational Lithography Pillars}
 \end{figure}
