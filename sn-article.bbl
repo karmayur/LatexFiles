@@ -358,20 +358,20 @@ pp. \bfpage{42}--\blpage{50}.
 \endbibitem
 
 %%% 23
-\bibitem[\protect\citeauthoryear{{Socha} et~al.}{2005}]{Socha66}
-\begin{bchapter}
-\bauthor{\bsnm{{Socha}}, \binits{R.}},
-\bauthor{\bsnm{{Shi}}, \binits{X.}},
-\bauthor{\bsnm{{LeHoty}}, \binits{D.}}:
-\bctitle{{Simultaneous source mask optimization (SMO)}}.
-In: \beditor{\bsnm{{Komuro}}, \binits{M.}} (ed.)
-\bbtitle{Photomask and Next-Generation Lithography Mask Technology XII}.
-\bsertitle{Society of Photo-Optical Instrumentation Engineers (SPIE) Conference Series},
-vol. \bseriesno{5853},
-pp. \bfpage{180}--\blpage{193}
-(\byear{2005}).
-\doiurl{10.1117/12.617431}
-\end{bchapter}
+\bibitem[\protect\citeauthoryear{Ma et~al.}{2018}]{ma2018fast}
+\begin{barticle}
+\bauthor{\bsnm{Ma}, \binits{X.}},
+\bauthor{\bsnm{Wang}, \binits{Z.}},
+\bauthor{\bsnm{Li}, \binits{Y.}},
+\bauthor{\bsnm{Arce}, \binits{G.R.}},
+\bauthor{\bsnm{Dong}, \binits{L.}},
+\bauthor{\bsnm{Garcia-Frias}, \binits{J.}}:
+\batitle{Fast optical proximity correction method based on nonlinear compressive sensing}.
+\bjtitle{Optics Express}
+\bvolume{26}(\bissue{11}),
+\bfpage{14479}--\blpage{14498}
+(\byear{2018})
+\end{barticle}
 \endbibitem
 
 %%% 24
@@ -389,23 +389,6 @@ pp. \bfpage{180}--\blpage{193}
 \endbibitem
 
 %%% 25
-\bibitem[\protect\citeauthoryear{Ma et~al.}{2018}]{ma2018fast}
-\begin{barticle}
-\bauthor{\bsnm{Ma}, \binits{X.}},
-\bauthor{\bsnm{Wang}, \binits{Z.}},
-\bauthor{\bsnm{Li}, \binits{Y.}},
-\bauthor{\bsnm{Arce}, \binits{G.R.}},
-\bauthor{\bsnm{Dong}, \binits{L.}},
-\bauthor{\bsnm{Garcia-Frias}, \binits{J.}}:
-\batitle{Fast optical proximity correction method based on nonlinear compressive sensing}.
-\bjtitle{Optics Express}
-\bvolume{26}(\bissue{11}),
-\bfpage{14479}--\blpage{14498}
-(\byear{2018})
-\end{barticle}
-\endbibitem
-
-%%% 26
 \bibitem[\protect\citeauthoryear{Pang et~al.}{2006}]{pang2006inverse}
 \begin{bchapter}
 \bauthor{\bsnm{Pang}, \binits{L.}},
@@ -420,7 +403,7 @@ pp. \bfpage{233}--\blpage{243}
 \end{bchapter}
 \endbibitem
 
-%%% 27
+%%% 26
 \bibitem[\protect\citeauthoryear{Pang}{2021}]{pang2021inverse}
 \begin{barticle}
 \bauthor{\bsnm{Pang}, \binits{L.}}:
@@ -430,6 +413,23 @@ pp. \bfpage{233}--\blpage{243}
 \bfpage{030901}--\blpage{030901}
 (\byear{2021})
 \end{barticle}
+\endbibitem
+
+%%% 27
+\bibitem[\protect\citeauthoryear{{Socha} et~al.}{2005}]{Socha66}
+\begin{bchapter}
+\bauthor{\bsnm{{Socha}}, \binits{R.}},
+\bauthor{\bsnm{{Shi}}, \binits{X.}},
+\bauthor{\bsnm{{LeHoty}}, \binits{D.}}:
+\bctitle{{Simultaneous source mask optimization (SMO)}}.
+In: \beditor{\bsnm{{Komuro}}, \binits{M.}} (ed.)
+\bbtitle{Photomask and Next-Generation Lithography Mask Technology XII}.
+\bsertitle{Society of Photo-Optical Instrumentation Engineers (SPIE) Conference Series},
+vol. \bseriesno{5853},
+pp. \bfpage{180}--\blpage{193}
+(\byear{2005}).
+\doiurl{10.1117/12.617431}
+\end{bchapter}
 \endbibitem
 
 %%% 28

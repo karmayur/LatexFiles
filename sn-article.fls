@@ -285,6 +285,11 @@ INPUT ./images/fig1.png
 INPUT ./images/fig1.png
 INPUT ./images/fig1.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+INPUT ./images/computation.png
+INPUT ./images/computation.png
+INPUT ./images/computation.png
+INPUT ./images/computation.png
+INPUT ./images/computation.png
 INPUT ./images/fig2.png
 INPUT ./images/fig2.png
 INPUT ./images/fig2.png

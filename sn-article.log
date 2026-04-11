@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  10 APR 2026 20:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  10 APR 2026 22:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -619,7 +619,7 @@ LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 147
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.52061> not available
 (Font)              size <6> substituted on input line 147.
 
-<images/summary.png, id=269, 1413.28pt x 770.88pt>
+<images/summary.png, id=277, 1413.28pt x 770.88pt>
 File: images/summary.png Graphic file (type png)
 <use images/summary.png>
 Package pdftex.def Info: images/summary.png  used on input line 147.
@@ -643,7 +643,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has
                                                   \__shipout_drop_firstpage_...
 l.154 
        <./images/summary.png>]
-<images/fig1.png, id=316, 770.88pt x 875.52094pt>
+<images/fig1.png, id=324, 770.88pt x 875.52094pt>
 File: images/fig1.png Graphic file (type png)
 <use images/fig1.png>
 Package pdftex.def Info: images/fig1.png  used on input line 157.
@@ -699,11 +699,22 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
+<images/computation.png, id=425, 1413.28pt x 770.88pt>
+File: images/computation.png Graphic file (type png)
+<use images/computation.png>
+Package pdftex.def Info: images/computation.png  used on input line 279.
+(pdftex.def)             Requested size: 372.0pt x 202.90599pt.
+
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11]
+ [11
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.293 
+       <./images/computation.png>]
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -719,10 +730,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14]
-<images/fig2.png, id=471, 695.59875pt x 519.44063pt>
+<images/fig2.png, id=482, 695.59875pt x 519.44063pt>
 File: images/fig2.png Graphic file (type png)
 <use images/fig2.png>
-Package pdftex.def Info: images/fig2.png  used on input line 352.
+Package pdftex.def Info: images/fig2.png  used on input line 332.
 (pdftex.def)             Requested size: 260.39886pt x 194.44893pt.
 
 
@@ -730,10 +741,10 @@ Package pdftex.def Info: images/fig2.png  used on input line 352.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.359 
+l.345 
        <./images/fig2.png>]
 
 
@@ -790,10 +801,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26]
-<images/fig3.png, id=589, 861.9703pt x 723.45282pt>
+<images/fig3.png, id=601, 861.9703pt x 723.45282pt>
 File: images/fig3.png Graphic file (type png)
 <use images/fig3.png>
-Package pdftex.def Info: images/fig3.png  used on input line 511.
+Package pdftex.def Info: images/fig3.png  used on input line 491.
 (pdftex.def)             Requested size: 260.39886pt x 218.54987pt.
 
 
@@ -806,11 +817,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.526 \subsubsection
-                    {Electron Beam and Deep Ultraviolet Lithography Context} <./images/fig3.png>]
+l.509 D
+       espite their high resolution, traditional e-beam approaches face thro... <./images/fig3.png>]
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -821,7 +832,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [30]
-Underfull \hbox (badness 2111) in paragraph at lines 589--590
+Underfull \hbox (badness 2111) in paragraph at lines 569--570
 []\OT1/cmr/m/n/10 Industrial plat-forms pro-vide the clear-est evi-dence of system-level impact.
  []
 
@@ -831,67 +842,67 @@ Underfull \hbox (badness 2111) in paragraph at lines 589--590
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31]
-Underfull \hbox (badness 10000) in paragraph at lines 616--616
+Underfull \hbox (badness 10000) in paragraph at lines 596--596
 []|\OT1/cmr/m/n/9 350+ GPUs replace
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 616--616
+Underfull \hbox (badness 10000) in paragraph at lines 596--596
 \OMS/cmsy/m/n/9 ^^X$\OT1/cmr/m/n/9 40,000 CPUs for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 616--616
+Underfull \hbox (badness 10000) in paragraph at lines 596--596
 \OT1/cmr/m/n/9 inte-gra-tion; enables
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 616--616
+Underfull \hbox (badness 10000) in paragraph at lines 596--596
 []|\OT1/cmr/m/n/9 Improved con-ver-gence
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 616--616
+Underfull \hbox (badness 1527) in paragraph at lines 596--596
 \OT1/cmr/m/n/9 espe-cially for curvi-lin-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 616--616
+Underfull \hbox (badness 10000) in paragraph at lines 596--596
 []|\OT1/cmr/m/n/9 Acceleration of sim-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 616--616
+Underfull \hbox (badness 10000) in paragraph at lines 596--596
 \OT1/cmr/m/n/9 u-la-tion and edge
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 616--616
+Underfull \hbox (badness 10000) in paragraph at lines 596--596
 \OT1/cmr/m/n/9 marks (circa 2020)
  []
 
 
-Underfull \hbox (badness 1194) in paragraph at lines 616--616
+Underfull \hbox (badness 1194) in paragraph at lines 596--596
 []|\OT1/cmr/m/n/9 Deep learn-ing inte-gra-
  []
 
 
-Underfull \hbox (badness 6364) in paragraph at lines 616--616
+Underfull \hbox (badness 6364) in paragraph at lines 596--596
 \OT1/cmr/m/n/9 tion halves com-pu-ta-
  []
 
 
-Underfull \hbox (badness 3623) in paragraph at lines 641--641
+Underfull \hbox (badness 3623) in paragraph at lines 621--621
 []|\OT1/cmr/m/n/9 Morphological oper-a-tions with reduced
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 641--641
+Underfull \hbox (badness 10000) in paragraph at lines 621--621
 []|\OT1/cmr/m/n/9 Distributed exe-cu-tion across 350--500
  []
 
 
-Underfull \hbox (badness 2980) in paragraph at lines 641--641
+Underfull \hbox (badness 2980) in paragraph at lines 621--621
 []|\OT1/cmr/m/n/9 Full-chip curvi-lin-ear mask ras-ter-i-za-tion
  []
 
@@ -904,18 +915,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.652 
+l.630 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.630 
       ]
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33
-pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.664 	
-       ]
+ [33]
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -931,7 +942,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [36]
-Underfull \hbox (badness 4872) in paragraph at lines 712--713
+Underfull \hbox (badness 4872) in paragraph at lines 692--693
 \OT1/cmr/m/n/10 costly, inter-pretabil-ity of learned mod-els is lim-ited, and com-pli-ance with
  []
 
@@ -1021,21 +1032,21 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.47939pt have occurred.
 
 Package rerunfilecheck Info: File `sn-article.out' has not changed.
-(rerunfilecheck)             Checksum: CCFFCEFF772DE9398F338178D17B305D;15256.
+(rerunfilecheck)             Checksum: D11D35CF3D33C6147CD4F2D296ED4CDC;15734.
  ) 
 Here is how much of TeX's memory you used:
- 15140 strings out of 473190
- 233795 string characters out of 5715801
- 640556 words of memory out of 5000000
- 37955 multiletter control sequences out of 15000+600000
+ 15153 strings out of 473190
+ 234121 string characters out of 5715801
+ 640608 words of memory out of 5000000
+ 37965 multiletter control sequences out of 15000+600000
  581914 words of font info for 126 fonts, out of 8000000 for 9000
  1151 hyphenation exceptions out of 8191
  90i,13n,93p,1382b,734s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on sn-article.pdf (45 pages, 4393796 bytes).
+Output written on sn-article.pdf (45 pages, 5764784 bytes).
 PDF statistics:
- 931 PDF objects out of 1000 (max. 8388607)
- 831 compressed objects within 9 object streams
- 187 named destinations out of 1000 (max. 500000)
- 549 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 942 PDF objects out of 1000 (max. 8388607)
+ 840 compressed objects within 9 object streams
+ 190 named destinations out of 1000 (max. 500000)
+ 570 words of extra memory for PDF output out of 10000 (max. 10000000)
 

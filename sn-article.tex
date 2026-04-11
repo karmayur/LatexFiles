@@ -221,70 +221,23 @@ There are 3 major techniques which fall in this category:
 
 \subsubsection{Optical Proximity Correction(OPC)}
 
-Optical proximity correction (OPC) represents the earliest and most widely deployed inverse approach, traditionally operating on mask edges or fragments to compensate for systematic imaging distortions. While rule-based OPC relies on predefined heuristics, model-based OPC evaluates forward lithography models repeatedly to guide fragment adjustments \cite{capodieci2006optical}. 
+Optical proximity correction (OPC) represents the earliest and most widely deployed inverse approach, traditionally operating on mask edges or fragments to compensate for systematic imaging distortions. While rule-based OPC relies on predefined heuristics, model-based OPC evaluates forward lithography models repeatedly to guide fragment adjustments \cite{capodieci2006optical}. Zheng et al. \cite{Zheng2024} explains the use of mathematical models to simulate image formation process and adjust the mask layout. It builds upon their previous work \cite{Zheng2023} about Open ILT to support model based OPC or MB OPC. They leverage GPU resources to accelerate the OPC computation, achieving significant speedup over the CPU based MB OPC method, while maintaining the same correction accuracy and quality.
+
+OPC is an extensively used resolution enhancement technique (RET) in optical lithography . However, it's  computational efficiency has become a big issue for pixelated OPC techniques due to the increasing complexity of lithographic masks in modern integrated circuits. The dimensionality of the OPC problem is reduced by  downsampling the layout pattern. Then, a nonlinear cost function is established to guarantee the lithography imaging performance on the downsampled layout. 
+Under the sparsity assumption of the mask, the OPC problem is formulated as an inverse nonlinear CS reconstruction problem.[\cite{ma2018fast},\cite{capodieci2006optical}]
+
+In model  based OPC, masks are systematically modified to compensate for the nonideal optical and process effects of an optical lithography system. The polygons in the layout are fragmented, and simulations are performed to determine the image intensity pattern on the wafer. If the simulated pattern on the wafer does not match the desired one, the mask is perturbed by moving the fragments. This iterative process continues until the pattern on the wafer matches the desired one. Although OPC increases the fidelity of pattern transfer to the wafer, it is quite CPU intensive due to the simulations performed at each iteration. 
+
+Linear regression techniques from statistical learning are used to predict the fragment movements. The goal is to reduce the number of iterations required in model based OPC by using a fast, computationally efficient linear regression solution as the initial guess to model based OPC. Experimental results show that fragment movement predictions via linear regression model significantly decrease the number of iterations required in model based OPC, thereby decreasing the product development time in IC design and manufacturing. [\cite{Gu2008}]
 
 
+\subsubsection{Inverse Lithography Technology(ILT)}
 
-Inverse lithography technology (ILT) generalizes this concept by formulating mask synthesis as a continuous or pixel-based optimization problem, allowing more degrees of freedom and improved pattern fidelity at advanced nodes \cite{cecil2022advances}. Source–mask optimization (SMO) further extends the inverse formulation by jointly optimizing illumination source parameters and mask geometry, increasing the dimensionality and computational complexity of the problem \cite{Socha66}.
+\textcolor{blue}{ ILT is an approach used to calculate shapes of the photo masks which will produce exact desired pattern on the silicon wafer. ILT based approaches are computationally scalable, especially as they avoid laborious segmentation script writing, which becomes increasingly complex for newwer generations due to complicated proximity effects. ILT also benefits with simulation results and wafer examples and the impact of ILT in every step of mask making process. There are also studies done together with leading mask shops around the world on mask manufacturability with ILT (including data fracturing, writing strategy and writing time, mask inspection). \cite{pang2006inverse}}
 
-Zheng et al. \cite{Zheng2024} explains the use of mathematical models to simulate image formation process and adjust the 
-mask layout. It builds upon their previous work \cite{Zheng2023} about Open ILT to support
-model based OPC or MB OPC. They leverage GPU resources to accelerate the OPC computation, achieving significant speedup over the CPU based MB OPC method, 
-while maintaining the same correction accuracy and quality.
+Inverse lithography technology (ILT) formulates mask synthesis as a continuous or pixel-based optimization problem, allowing more degrees of freedom and improved pattern fidelity at advanced nodes \cite{cecil2022advances}. 
 
-Gu et al. \cite{Gu2008} explain how in model  based OPC, masks are systematically modified to compensate for the nonideal optical and process 
-effects of an optical lithography system. The polygons in the layout are fragmented, and simulations are performed to determine the image 
-intensity pattern on the wafer. If the simulated pattern on the wafer does not match the desired one, the mask is perturbed by moving the fragments. This
-iterative process continues until the pattern on the wafer matches the desired one. Although OPC increases the fidelity 
-of pattern transfer to the wafer, it is quite CPU intensive due to the simulations performed at each iteration. In this
-paper, linear regression techniques from statistical learning are used to predict the fragment movements. The goal is to
-reduce the number of iterations required in model based OPC by using a fast, computationally efficient linear regression
-solution as the initial guess to model based OPC. Experimental results show that fragment movement predictions via 
-linear regression model significantly decrease the number of iterations required in model based OPC, thereby decreasing 
-the product development time in IC design and manufacturing.
-
-Optical proximity correction (OPC) is an extensively used resolution enhancement technique (RET) in optical lithography \cite{ma2018fast}. 
-To date, the computational efficiency has become a big issue for pixelated OPC techniques due to the increasing complexity of lithographic masks 
-in modern integrated circuits. This paper is the first to apply nonlinear compressive sensing (CS) theory to break through the computational efficiency 
-of gradient based pixelated OPC methods. The proposed method reduces the dimensionality of the OPC problem by downsampling the layout pattern. 
-Then, a nonlinear cost function is established to guarantee the lithography imaging performance on the downsampled layout. 
-Under the sparsity assumption of the mask, the OPC problem is formulated as an inverse nonlinear CS reconstruction problem. The iterative hard thresholding (IHT) algorithm is then used to solve for the OPC problem. The proposed method proves to improve the computational 
-efficiency of traditional gradient based OPC methods, while improving the process windows of the lithography systems. 
-Benefiting from the sparse property of the mask patterns, the mask manufacturability can also be improved compared to traditional methods.
-
-Capodieci et al. \cite{capodieci2006optical} talk about synergy between Resolution Enhancement Technologies (RET) 
-in Optical Lithography and Optical Proximity Correction (OPC). This heterogeneous array of patterning solutions ranges from simple 
-rule based to more sophisticated model based corrections, including sub resolution assist features, partially transmitting masks and
-various dual mask approaches. A survey of the evolutionary development from the early introduction of the first OPC engines in 1996 
-to the debut of Immersion Lithography in 2006 reveals that the convergence of RET and OPC has also enabled a progressive selection 
-and fine tuning of Geometric Design Rules (GDR) at each technology node, based on systematic adoption of lithographic verification.
-This paper describes the use of ``full chip" lithography verification engines in current Design For Manufacturing (DFM) practices and 
-extends the analysis to identify a set of key technologies and applications for the 45, 32 and 22 nm nodes. As OPC derived tools enter
-the stage of maturity, from a software standpoint, their use model is being greatly broadened from the back end mask tape out flow, 
-upstream, directly integrated into physical design verification. Lithography awareness into the physical design environment, mediated
-by new DFM verification tools and flows, is driving various forms of manufacturable physical layout implementation: from Restricted 
-Design Rules and Flexible Design Rules to Regular Circuit Fabrics. As new lithography solutions, such as immersion lithography and EUV, 
-will have to be deployed within a complex technology framework, the paper also examines the trend towards "layout design regularization"
-and its implications for patterning and next generation lithographies.
-
-
-\textcolor{blue}{\cite{pang2006inverse} Pang et al. talk about Inverser Lithography Technology (ILT), which is an approach used to calculate shapes of the photo masks which will produce exact desired pattern on the silicon wafer. In this paper, Pang et al. compare ILT with OPC technologies, which are more edge based. They go on to show why ILT based approaches become computationally scalable, especially as they avoid laborious segmentation script writing, which becomes increasingly complex for newwer generations due to complicated proximity effects. They also go on to demonstrate ILT benefits with simulation results and wafer examples and the impact of ILT in every step of mask making process. Another interesting part in the paper talks about the studies done together with leading mask shops around the world on mask manufacturability (including data fracturing, writing strategy and writing time, mask inspection).}
-
-
-As Moore’s law has marched forward, progressively shrinking chip designs at a consistent pace, the manufacturing 
-of those chips has raced to keep up. Through advances in lithography hardware and software, we now are in the realm of the single digit nanometer
-design nodes at leading chip foundries. Cecil et al.\cite{cecil2022advances} reviews the method of ILT, which is the preferred computational
-method for photolithography. Indeed photolithographic masks were the first metasurfaces, and still the most important metasurface, economically, 
-used in memory chips, storage, and microprocessors. Moreover, photolithographic mask designers were the early adopters of the mathematical optimization
-in optics, creating ILT, specifying intended wafer patterns and metrics, and using the mathematical machinery of level sets, functional derivatives, 
-and adjoints to drive the mask design process.
-
-
-\textcolor{blue}{ Chen et al. \cite{chen2022label} talk about how Neural network based inverse lithography technology (NNILT) has been used to improve the computational efficiency of large scale mask optimization for advanced photolithography. NNILT is now mostly based on labels, and its performance is affected by the quality of labels. It is difficult for NNILT to achieve high performance and extrapolation ability for mask optimization without using labels. 
-In the paper, Chen et al. propose a label free NNILT (LF NNILT), which is implemented completely without labels and greatly improves the printability of the target
-layouts and the manufacturability of the synthesized masks compared to the traditional ILT. More importantly, the optimization speed of LF NNILT
-is two orders of magnitude faster than the traditional ILT. Furthermore, LF NNILT is simpler to implement and can achieve better solvers to support 
-the development of advanced lithography.}
+\textcolor{blue}{ Neural network based inverse lithography technology (NNILT) has been used to improve the computational efficiency of large scale mask optimization for advanced photolithography. NNILT is now mostly based on labels, and its performance is affected by the quality of labels. It is difficult for NNILT to achieve high performance and extrapolation ability for mask optimization without using labels. There are label free NNILT techniques(LF NNILT), which are implemented completely without labels and greatly improves the printability of the target layouts and the manufacturability of the synthesized masks compared to the traditional ILT. More importantly, the optimization speed of LF NNILT is two orders of magnitude faster than the traditional ILT. Furthermore, LF NNILT is simpler to implement and can achieve better solvers to support the development of advanced lithography.\cite{chen2022label}}
 
 In lithography, optical proximity and process bias/effects need to be corrected to achieve the best wafer print \cite{pang2021inverse}. 
 Efforts to correct for these effects started with a simple bias, adding a hammer head in line ends to prevent line end shortening. 
@@ -303,7 +256,34 @@ Robust optimization further amplifies this cost. To ensure manufacturability, in
 
 At scale, GPUs are not optional accelerators but enabling infrastructure for inverse lithography. The massive data parallelism exposed by pixel-level mask representations, FFT-based imaging, and gradient evaluation aligns naturally with GPU execution models. More importantly, inverse workflows benefit from keeping the entire optimization loop device-resident, avoiding costly CPU–GPU data transfers between iterations. GPU-accelerated frameworks have demonstrated that this design dramatically improves throughput, energy efficiency, and multi-GPU scalability, enabling inverse lithography to transition from academic prototypes to production-scale deployment.
 
-In summary, OPC, ILT, and SMO recast lithography as large-scale inverse optimization problems whose computational intensity grows rapidly with layout complexity and process robustness requirements. Gradient-based methods and robust formulations make repeated forward simulation unavoidable, rendering inverse lithography fundamentally dependent on GPU acceleration and cluster-scale parallelism for practical use at advanced technology nodes.
+
+As Moore’s law has marched forward, progressively shrinking chip designs at a consistent pace, the manufacturing 
+of those chips has raced to keep up. Through advances in lithography hardware and software, we now are in the realm of the single digit nanometer
+design nodes at leading chip foundries. Cecil et al.\cite{cecil2022advances} reviews the method of ILT, which is the preferred computational
+method for photolithography. Indeed photolithographic masks were the first metasurfaces, and still the most important metasurface, economically, 
+used in memory chips, storage, and microprocessors. Moreover, photolithographic mask designers were the early adopters of the mathematical optimization
+in optics, creating ILT, specifying intended wafer patterns and metrics, and using the mathematical machinery of level sets, functional derivatives, 
+and adjoints to drive the mask design process.
+
+
+
+\subsubsection{Source Mask Optimization(SMO)}
+Source–mask optimization (SMO) further extends the inverse formulation by jointly optimizing illumination source parameters and mask geometry, increasing the dimensionality and computational complexity of the problem \cite{Socha66}.
+
+
+
+In summary, OPC, ILT, and SMO recast lithography as large-scale inverse optimization problems whose computational intensity grows rapidly with layout complexity and process robustness requirements. Gradient-based methods and robust formulations make repeated forward simulation unavoidable, rendering inverse lithography fundamentally dependent on GPU acceleration and cluster-scale parallelism for practical use at advanced technology nodes. Figure below shows the loop between OPC, ILT and SMO.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=1.0\linewidth]{images/computation.png}
+  \caption{Forward vs Inverse Techniques}
+  \label{fig:Forward vs Inverse Lithography}
+\end{figure}
+
+
+
+
 
 \section{GPU Architecture Considerations for Lithography}
 \subsection{SIMT Execution and Parallel Structure} 
