@@ -194,8 +194,19 @@ As with optical imaging, data residency plays a central role in performance and 
 
 In summary, photoresist modeling significantly amplifies the computational demands of lithography simulation due to its reliance on PDE solvers and stochastic Monte Carlo methods, particularly under EUV conditions. At the same time, the localized, data-parallel structure of these computations aligns naturally with GPU execution models. As a result, GPU acceleration is not merely beneficial but increasingly essential for scalable, physics-aware resist modeling within modern computational lithography pipelines.
 
+
+
 \section{Mathematical and Algorithmic Formulations}
 The shift toward GPU-centric architectures is driven by the mathematical evolution of lithography from a linear simulation task to a high-dimensional inverse optimization problem. This section synthesizes the core algorithms that define modern lithographic workflows.
+
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=1.0\linewidth]{images/lithography_Evolution.png}
+  \caption{Lithography Techniques}
+  \label{fig:Lithography Techniques}
+\end{figure}
+
 
 \subsection{Forward Lithography Models : The computational foundation}
 One can think of forward lithography models as a feed-forward control system, which takes in mask as in input and predicts and final wafter pattern. These models serve as the inner loop of every optimization routine and are primary targets of GPU acceleration due to their data parallel structures. 
@@ -272,7 +283,10 @@ Source–mask optimization (SMO) further extends the inverse formulation by join
 
 
 
-In summary, OPC, ILT, and SMO recast lithography as large-scale inverse optimization problems whose computational intensity grows rapidly with layout complexity and process robustness requirements. Gradient-based methods and robust formulations make repeated forward simulation unavoidable, rendering inverse lithography fundamentally dependent on GPU acceleration and cluster-scale parallelism for practical use at advanced technology nodes. Figure below shows the loop between OPC, ILT and SMO.
+In summary, OPC, ILT, and SMO recast lithography as large-scale inverse optimization problems whose computational intensity grows rapidly with layout complexity and process robustness requirements. Gradient-based methods and robust formulations make repeated forward simulation unavoidable, rendering inverse lithography fundamentally dependent on GPU acceleration and cluster-scale parallelism for practical use at advanced technology nodes. 
+
+
+Figure 4 below show how these techniques continue to coexist to make advances in the field of lithography.
 
 \begin{figure}[t]
   \centering
